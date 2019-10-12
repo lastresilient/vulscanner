@@ -1,0 +1,18 @@
+15:48:59:1159 ,scanner, Connecting to database
+15:48:59:1159 ,scanner, Generating next test ID
+15:48:59:1159 ,scanner, Next ID generated is 1
+15:48:59:1159 ,scanner, Successfully executed query: INSERT into tests(id,status,numUrlsFound,type,num_requests_sent,start_timestamp,finish_timestamp,scan_finished,url,username,urls_found) VALUES(1,'Creating profile for new scan...',0,'scan',0,1541947739,1541947739,0,'careerbit.in','aashish','') 
+15:48:59:1159 ,scanner, Calling AJAX function beginCrawl()
+15:49:05:1105 ,scanner, Connecting to database
+15:49:05:1105 ,scanner, Generating next test ID
+15:49:05:1105 ,scanner, Next ID generated is 2
+15:49:05:1105 ,scanner, Problem executing query: INSERT into tests(id,status,numUrlsFound,type,num_requests_sent,start_timestamp,finish_timestamp,scan_finished,url,username,urls_found) VALUES(2,'Creating profile for new scan...',0,'scan',0,1541947745,1541947745,0,'careerbit.in','aashish','') 
+15:49:21:1121 ,scanner, Connecting to database
+15:49:21:1121 ,scanner, Generating next test ID
+15:49:21:1121 ,scanner, Next ID generated is 2
+15:49:21:1121 ,scanner, Successfully executed query: INSERT into tests(id,status,numUrlsFound,type,num_requests_sent,start_timestamp,finish_timestamp,scan_finished,url,username,urls_found) VALUES(2,'Creating profile for new scan...',0,'scan',0,1541947761,1541947761,0,'http://careerbit.in','aashish','') 
+15:49:21:1121 ,scanner, Calling AJAX function beginCrawl()
+15:51:22:1122 ,scanner, Connecting to database
+15:51:22:1122 ,scanner, Generating next test ID
+15:51:22:1122 ,scanner, Next ID generated is 4
+15:51:22:1122 ,scanner, Problem executing query: INSERT into tests(id,status,numUrlsFound,type,num_requests_sent,start_timestamp,finish_timestamp,scan_finished,url,username,urls_found) VALUES(4,'Creating profile for new scan...',0,'scan',0,1541947882,1541947882,0,'careerbit.in','aashish','') 

@@ -1,0 +1,18 @@
+07:33:23:0423 ,crawler, Connecting to database
+07:33:23:0423 ,crawler, Generating next test ID
+07:33:23:0423 ,crawler, Next ID generated is 18
+07:33:23:0423 ,crawler, Successfully executed query: INSERT into tests(id,status,numUrlsFound,type,num_requests_sent,start_timestamp,finish_timestamp,scan_finished,url,username,urls_found) VALUES(18,'Creating profile for new crawl...',0,'crawl',0,1555918403,1555918403,0,'vul.handykartsweb.com','gopal','') 
+07:33:23:0423 ,crawler, Calling AJAX function beginCrawl()
+07:33:23:0423 ,begin_crawl, Connecting to database
+07:33:23:0423 ,begin_crawl, Instantiating crawler
+07:33:23:0423 ,begin_crawl, URL to scan: vul.handykartsweb.com
+07:33:23:0423 ,begin_crawl, Starting crawler
+07:33:23:0423 ,begin_crawl, All URLs found excluding exceptions:
+07:33:23:0423 ,begin_crawl, http://vul.handykartsweb.com/
+07:33:23:0423 ,begin_crawl, http://vul.handykartsweb.com/index.php
+07:33:23:0423 ,begin_crawl, http://vul.handykartsweb.com/login.php
+07:33:23:0423 ,begin_crawl, http://vul.handykartsweb.com/about.php
+07:33:23:0423 ,begin_crawl, http://vul.handykartsweb.com/crawler.php
+07:33:23:0423 ,begin_crawl, http://vul.handykartsweb.com/scanner.php
+07:33:23:0423 ,begin_crawl, http://vul.handykartsweb.com/history.php
+07:33:23:0423 ,begin_crawl, http://vul.handykartsweb.com/register.php

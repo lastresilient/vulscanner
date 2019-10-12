@@ -1,0 +1,45 @@
+16:16:29:0429 ,crawler, Connecting to database
+16:16:29:0429 ,crawler, Generating next test ID
+16:16:29:0429 ,crawler, Next ID generated is 6
+16:16:29:0429 ,crawler, Successfully executed query: INSERT into tests(id,status,numUrlsFound,type,num_requests_sent,start_timestamp,finish_timestamp,scan_finished,url,username,urls_found) VALUES(6,'Creating profile for new crawl...',0,'crawl',0,1555863389,1555863389,0,'http://careerbit.in','aashish1','') 
+16:16:29:0429 ,crawler, Calling AJAX function beginCrawl()
+16:17:13:0413 ,crawler, Connecting to database
+16:17:13:0413 ,crawler, Generating next test ID
+16:17:13:0413 ,crawler, Next ID generated is 7
+16:17:13:0413 ,crawler, Successfully executed query: INSERT into tests(id,status,numUrlsFound,type,num_requests_sent,start_timestamp,finish_timestamp,scan_finished,url,username,urls_found) VALUES(7,'Creating profile for new crawl...',0,'crawl',0,1555863433,1555863433,0,'http://careerbit.in','aashish1','') 
+16:17:13:0413 ,crawler, Calling AJAX function beginCrawl()
+16:29:10:0410 ,crawler, Connecting to database
+16:29:10:0410 ,crawler, Generating next test ID
+16:29:10:0410 ,crawler, Next ID generated is 8
+16:29:10:0410 ,crawler, Successfully executed query: INSERT into tests(id,status,numUrlsFound,type,num_requests_sent,start_timestamp,finish_timestamp,scan_finished,url,username,urls_found) VALUES(8,'Creating profile for new crawl...',0,'crawl',0,1555864150,1555864150,0,'http://careerbit.in','aashish1','') 
+16:29:10:0410 ,crawler, Calling AJAX function beginCrawl()
+16:44:47:0447 ,crawler, Connecting to database
+16:44:47:0447 ,crawler, Generating next test ID
+16:44:47:0447 ,crawler, Next ID generated is 9
+16:44:47:0447 ,crawler, Successfully executed query: INSERT into tests(id,status,numUrlsFound,type,num_requests_sent,start_timestamp,finish_timestamp,scan_finished,url,username,urls_found) VALUES(9,'Creating profile for new crawl...',0,'crawl',0,1555865087,1555865087,0,'http://careerbit.in','aashish1','') 
+16:44:47:0447 ,crawler, Calling AJAX function beginCrawl()
+16:47:21:0421 ,crawler, Connecting to database
+16:47:21:0421 ,crawler, Generating next test ID
+16:47:21:0421 ,crawler, Next ID generated is 11
+16:47:21:0421 ,crawler, Successfully executed query: INSERT into tests(id,status,numUrlsFound,type,num_requests_sent,start_timestamp,finish_timestamp,scan_finished,url,username,urls_found) VALUES(11,'Creating profile for new crawl...',0,'crawl',0,1555865241,1555865241,0,'http://careerbit.in','aashish1','') 
+16:47:21:0421 ,crawler, Calling AJAX function beginCrawl()
+16:53:23:0423 ,crawler, Connecting to database
+16:53:23:0423 ,crawler, Generating next test ID
+16:53:23:0423 ,crawler, Next ID generated is 12
+16:53:23:0423 ,crawler, Successfully executed query: INSERT into tests(id,status,numUrlsFound,type,num_requests_sent,start_timestamp,finish_timestamp,scan_finished,url,username,urls_found) VALUES(12,'Creating profile for new crawl...',0,'crawl',0,1555865603,1555865603,0,'http://careerbit.in','aashish1','') 
+16:53:23:0423 ,crawler, Calling AJAX function beginCrawl()
+16:53:23:0423 ,begin_crawl, Connecting to database
+16:53:23:0423 ,begin_crawl, Instantiating crawler
+16:53:23:0423 ,begin_crawl, URL to scan: http://careerbit.in
+16:53:23:0423 ,begin_crawl, Starting crawler
+16:53:23:0423 ,begin_crawl, All URLs found excluding exceptions:
+16:53:23:0423 ,begin_crawl, http://careerbit.in/
+16:53:48:0448 ,crawler, Connecting to database
+16:53:48:0448 ,crawler, Generating next test ID
+16:53:48:0448 ,crawler, Next ID generated is 13
+16:53:48:0448 ,crawler, Successfully executed query: INSERT into tests(id,status,numUrlsFound,type,num_requests_sent,start_timestamp,finish_timestamp,scan_finished,url,username,urls_found) VALUES(13,'Creating profile for new crawl...',0,'crawl',0,1555865628,1555865628,0,'spurmotorsports.com','aashish1','') 
+16:53:48:0448 ,crawler, Calling AJAX function beginCrawl()
+16:53:49:0449 ,begin_crawl, Connecting to database
+16:53:49:0449 ,begin_crawl, Instantiating crawler
+16:53:49:0449 ,begin_crawl, URL to scan: spurmotorsports.com
+16:53:49:0449 ,begin_crawl, Starting crawler

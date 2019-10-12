@@ -1,0 +1,2073 @@
+07:33:56:0456 ,scanner, Connecting to database
+07:33:56:0456 ,scanner, Generating next test ID
+07:33:56:0456 ,scanner, Next ID generated is 19
+07:33:56:0456 ,scanner, Successfully executed query: INSERT into tests(id,status,numUrlsFound,type,num_requests_sent,start_timestamp,finish_timestamp,scan_finished,url,username,urls_found) VALUES(19,'Creating profile for new scan...',0,'scan',0,1555918436,1555918436,0,'vul.handykartsweb.com','gopal','') 
+07:33:56:0456 ,scanner, Calling AJAX function beginCrawl()
+07:33:57:0457 ,begin_scan, Connecting to database
+07:33:57:0457 ,begin_scan, URL to scan: http://vul.handykartsweb.com
+07:33:57:0457 ,begin_scan, Instantiating crawler
+07:33:57:0457 ,begin_scan, Starting crawler
+07:33:58:0458 ,begin_scan, All URLs found excluding exceptions:
+07:33:58:0458 ,begin_scan, http://vul.handykartsweb.com/
+07:33:58:0458 ,begin_scan, http://vul.handykartsweb.com/index.php
+07:33:58:0458 ,begin_scan, http://vul.handykartsweb.com/login.php
+07:33:58:0458 ,begin_scan, http://vul.handykartsweb.com/about.php
+07:33:58:0458 ,begin_scan, http://vul.handykartsweb.com/crawler.php
+07:33:58:0458 ,begin_scan, http://vul.handykartsweb.com/scanner.php
+07:33:58:0458 ,begin_scan, http://vul.handykartsweb.com/history.php
+07:33:58:0458 ,begin_scan, http://vul.handykartsweb.com/register.php
+07:33:58:0458 ,begin_scan, Beginning testing http://vul.handykartsweb.com for HTTP Banner Disclosure
+07:33:58:0458 ,begin_scan, Starting HTTP Banner Disclosure test function on http://vul.handykartsweb.com
+07:33:58:0458 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com
+07:33:58:0458 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com
+07:33:58:0458 ,begin_scan, Server header for http://vul.handykartsweb.com is empty
+07:33:58:0458 ,begin_scan, Successfully executed query SELECT * FROM test_results WHERE test_id = 19 AND type = 'bannerdis' AND method = 'get' AND url = 'http://vul.handykartsweb.com' AND attack_str = 'PHP/5.6.39'
+07:33:58:0458 ,begin_scan, Number of rows is 0 for query: SELECT * FROM test_results WHERE test_id = 19 AND type = 'bannerdis' AND method = 'get' AND url = 'http://vul.handykartsweb.com' AND attack_str = 'PHP/5.6.39'
+07:33:58:0458 ,begin_scan, Finished testing http://vul.handykartsweb.com for HTTP Banner Disclosure for test: 19
+07:33:58:0458 ,begin_scan, Beginning testing each of the URLs for autocomplete not disabled on sensitive input fields
+07:33:58:0458 ,begin_scan, Starting autocomplete test function on http://vul.handykartsweb.com/
+07:33:58:0458 ,begin_scan, Searching http://vul.handykartsweb.com/ for input fields
+07:33:58:0458 ,begin_scan, Checking what response code is received from http://vul.handykartsweb.com/
+07:33:58:0458 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/
+07:33:58:0458 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/
+07:33:58:0458 ,begin_scan, Received response code: 200
+07:33:58:0458 ,begin_scan, Starting autocomplete test function on http://vul.handykartsweb.com/index.php
+07:33:58:0458 ,begin_scan, Searching http://vul.handykartsweb.com/index.php for input fields
+07:33:58:0458 ,begin_scan, Checking what response code is received from http://vul.handykartsweb.com/index.php
+07:33:58:0458 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/index.php
+07:33:58:0458 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php
+07:33:58:0458 ,begin_scan, Received response code: 200
+07:33:58:0458 ,begin_scan, Starting autocomplete test function on http://vul.handykartsweb.com/login.php
+07:33:58:0458 ,begin_scan, Searching http://vul.handykartsweb.com/login.php for input fields
+07:33:58:0458 ,begin_scan, Checking what response code is received from http://vul.handykartsweb.com/login.php
+07:33:58:0458 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:33:58:0458 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:33:58:0458 ,begin_scan, Received response code: 200
+07:33:58:0458 ,begin_scan, Starting autocomplete test function on http://vul.handykartsweb.com/about.php
+07:33:58:0458 ,begin_scan, Searching http://vul.handykartsweb.com/about.php for input fields
+07:33:58:0458 ,begin_scan, Checking what response code is received from http://vul.handykartsweb.com/about.php
+07:33:58:0458 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/about.php
+07:33:58:0458 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php
+07:33:58:0458 ,begin_scan, Received response code: 200
+07:33:58:0458 ,begin_scan, Starting autocomplete test function on http://vul.handykartsweb.com/crawler.php
+07:33:58:0458 ,begin_scan, Searching http://vul.handykartsweb.com/crawler.php for input fields
+07:33:58:0458 ,begin_scan, Checking what response code is received from http://vul.handykartsweb.com/crawler.php
+07:33:58:0458 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/crawler.php
+07:33:58:0458 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php
+07:33:58:0458 ,begin_scan, Received response code: 200
+07:33:58:0458 ,begin_scan, Starting autocomplete test function on http://vul.handykartsweb.com/scanner.php
+07:33:58:0458 ,begin_scan, Searching http://vul.handykartsweb.com/scanner.php for input fields
+07:33:58:0458 ,begin_scan, Checking what response code is received from http://vul.handykartsweb.com/scanner.php
+07:33:58:0458 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/scanner.php
+07:33:58:0458 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php
+07:33:58:0458 ,begin_scan, Received response code: 200
+07:33:58:0458 ,begin_scan, Starting autocomplete test function on http://vul.handykartsweb.com/history.php
+07:33:58:0458 ,begin_scan, Searching http://vul.handykartsweb.com/history.php for input fields
+07:33:58:0458 ,begin_scan, Checking what response code is received from http://vul.handykartsweb.com/history.php
+07:33:58:0458 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/history.php
+07:33:58:0458 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php
+07:33:58:0458 ,begin_scan, Received response code: 200
+07:33:58:0458 ,begin_scan, Starting autocomplete test function on http://vul.handykartsweb.com/register.php
+07:33:58:0458 ,begin_scan, Searching http://vul.handykartsweb.com/register.php for input fields
+07:33:58:0458 ,begin_scan, Checking what response code is received from http://vul.handykartsweb.com/register.php
+07:33:58:0458 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/register.php
+07:33:58:0458 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php
+07:33:58:0458 ,begin_scan, Received response code: 200
+07:33:58:0458 ,begin_scan, Finished testing each of the URLs for autocomplete not disabled on sensitive input fields for test: 19
+07:33:58:0458 ,begin_scan, Beginning testing http://vul.handykartsweb.com for Directory Listing enabled
+07:33:58:0458 ,begin_scan, Testing for http://vul.handykartsweb.com/ for Directory Listing enabled
+07:33:58:0458 ,begin_scan, Crawling http://vul.handykartsweb.com/ again for all links including images, css, etc, in order to identify directories
+07:33:59:0459 ,begin_scan, All URLs found during crawl for directory listing check:
+07:33:59:0459 ,begin_scan, http://vul.handykartsweb.com/
+07:33:59:0459 ,begin_scan, http://vul.handykartsweb.com/index.php
+07:33:59:0459 ,begin_scan, http://vul.handykartsweb.com/images/favicon.gif
+07:33:59:0459 ,begin_scan, http://vul.handykartsweb.com/style.css
+07:33:59:0459 ,begin_scan, http://vul.handykartsweb.com/js/swfobject/swfobject.js
+07:33:59:0459 ,begin_scan, http://vul.handykartsweb.com/jquery-1.6.4.js
+07:33:59:0459 ,begin_scan, http://vul.handykartsweb.com/login.php
+07:33:59:0459 ,begin_scan, http://vul.handykartsweb.com/about.php
+07:33:59:0459 ,begin_scan, http://vul.handykartsweb.com/crawler.php
+07:33:59:0459 ,begin_scan, http://vul.handykartsweb.com/scanner.php
+07:33:59:0459 ,begin_scan, http://vul.handykartsweb.com/history.php
+07:33:59:0459 ,begin_scan, http://vul.handykartsweb.com/register.php
+07:33:59:0459 ,begin_scan, Found directory images
+07:33:59:0459 ,begin_scan, Found directory js/swfobject
+07:33:59:0459 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/images/
+07:33:59:0459 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/images/
+07:33:59:0459 ,begin_scan, Received response code: 200
+07:33:59:0459 ,begin_scan, Successfully executed query SELECT * FROM test_results WHERE test_id = 19 AND type = 'dirlist' AND method = 'get' AND url = 'http://vul.handykartsweb.com/images/' AND attack_str = 'http://vul.handykartsweb.com/images/'
+07:33:59:0459 ,begin_scan, Number of rows is 0 for query: SELECT * FROM test_results WHERE test_id = 19 AND type = 'dirlist' AND method = 'get' AND url = 'http://vul.handykartsweb.com/images/' AND attack_str = 'http://vul.handykartsweb.com/images/'
+07:33:59:0459 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/js/swfobject/
+07:33:59:0459 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/js/swfobject/
+07:33:59:0459 ,begin_scan, Received response code: 200
+07:33:59:0459 ,begin_scan, Successfully executed query SELECT * FROM test_results WHERE test_id = 19 AND type = 'dirlist' AND method = 'get' AND url = 'http://vul.handykartsweb.com/js/swfobject/' AND attack_str = 'http://vul.handykartsweb.com/js/swfobject/'
+07:33:59:0459 ,begin_scan, Number of rows is 0 for query: SELECT * FROM test_results WHERE test_id = 19 AND type = 'dirlist' AND method = 'get' AND url = 'http://vul.handykartsweb.com/js/swfobject/' AND attack_str = 'http://vul.handykartsweb.com/js/swfobject/'
+07:33:59:0459 ,begin_scan, Finished testing http://vul.handykartsweb.com for Directory Listing enabled for test: 19
+07:33:59:0459 ,begin_scan, Beginning testing each of the URLs for Insecure Direct Object References
+07:33:59:0459 ,begin_scan, Identifying which URLs have parameters
+07:33:59:0459 ,begin_scan, All URLs found during crawl:
+07:33:59:0459 ,begin_scan, http://vul.handykartsweb.com/
+07:33:59:0459 ,begin_scan, http://vul.handykartsweb.com/index.php
+07:33:59:0459 ,begin_scan, http://vul.handykartsweb.com/login.php
+07:33:59:0459 ,begin_scan, http://vul.handykartsweb.com/about.php
+07:33:59:0459 ,begin_scan, http://vul.handykartsweb.com/crawler.php
+07:33:59:0459 ,begin_scan, http://vul.handykartsweb.com/scanner.php
+07:33:59:0459 ,begin_scan, http://vul.handykartsweb.com/history.php
+07:33:59:0459 ,begin_scan, http://vul.handykartsweb.com/register.php
+07:33:59:0459 ,begin_scan, URLs with parameters:
+07:33:59:0459 ,begin_scan, Testing each URL that has parameters
+07:33:59:0459 ,begin_scan, Finished testing each of the URLs for Insecure Direct Object References for test: 19
+07:33:59:0459 ,begin_scan, Beginning testing each of the URLs for Unvalidated Redirects
+07:33:59:0459 ,begin_scan, Starting Unvalidated Redirects test function on all URLs
+07:33:59:0459 ,begin_scan, Identifying which URLs, if any, cause redirects
+07:33:59:0459 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/
+07:33:59:0459 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/
+07:33:59:0459 ,begin_scan, Received response code: 200
+07:33:59:0459 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/index.php
+07:33:59:0459 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php
+07:33:59:0459 ,begin_scan, Received response code: 200
+07:33:59:0459 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:33:59:0459 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:33:59:0459 ,begin_scan, Received response code: 200
+07:33:59:0459 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/about.php
+07:33:59:0459 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php
+07:33:59:0459 ,begin_scan, Received response code: 200
+07:33:59:0459 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/crawler.php
+07:33:59:0459 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php
+07:33:59:0459 ,begin_scan, Received response code: 200
+07:33:59:0459 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/scanner.php
+07:33:59:0459 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php
+07:33:59:0459 ,begin_scan, Received response code: 200
+07:33:59:0459 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/history.php
+07:33:59:0459 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php
+07:33:59:0459 ,begin_scan, Received response code: 200
+07:33:59:0459 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/register.php
+07:33:59:0459 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php
+07:33:59:0459 ,begin_scan, Received response code: 200
+07:33:59:0459 ,begin_scan, Potentially Vulnerable URLs:
+07:33:59:0459 ,begin_scan, Finished testing each of the URLs for Unvalidated Redirects for test: 19
+07:33:59:0459 ,begin_scan, Beginning testing URLs for untrustworthy SSL certificates
+07:33:59:0459 ,begin_scan, Starting SSL certificate verification function on Array
+07:33:59:0459 ,begin_scan, Identifying which URLs, if any, begin with HTTPS
+07:33:59:0459 ,begin_scan, Finished testing each of the URLs for untrustworthy SSL certificates for test: 19
+07:33:59:0459 ,begin_scan, Beginning Reflected XSS testing on each of the URLs
+07:33:59:0459 ,begin_scan, Starting Reflected XXS test function on http://vul.handykartsweb.com/
+07:33:59:0459 ,begin_scan, Checking what response code is received from http://vul.handykartsweb.com/
+07:33:59:0459 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/
+07:33:59:0459 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/
+07:33:59:0459 ,begin_scan, Received response code: 200
+07:33:59:0459 ,begin_scan, Check if http://vul.handykartsweb.com/ contains parameters
+07:33:59:0459 ,begin_scan, Searching http://vul.handykartsweb.com/ for forms
+07:33:59:0459 ,begin_scan, Found form on http://vul.handykartsweb.com/:   post login.php 1
+07:33:59:0459 ,begin_scan, Found input field on http://vul.handykartsweb.com/:  email   Email text 1
+07:33:59:0459 ,begin_scan, Found input field on http://vul.handykartsweb.com/:  password   Password text 1
+07:33:59:0459 ,begin_scan, Found input field on http://vul.handykartsweb.com/:  submit   Log in submit 1
+07:33:59:0459 ,begin_scan, Found input field on http://vul.handykartsweb.com/:     Register button 1
+07:33:59:0459 ,begin_scan, Beginning testing of forms
+07:33:59:0459 ,begin_scan, Beginning testing of form on http://vul.handykartsweb.com/:   post login.php
+07:33:59:0459 ,begin_scan, Beginning testing input fields of form on http://vul.handykartsweb.com/:   post login.php
+07:33:59:0459 ,begin_scan, Submitting payload: <webvulscan>
+07:33:59:0459 ,begin_scan, Submitting payload: javascript:alert(webvulscan)
+07:33:59:0459 ,begin_scan, Submitting payload: <webvulscan>
+07:33:59:0459 ,begin_scan, Submitting payload: javascript:alert(webvulscan)
+07:33:59:0459 ,begin_scan, Submitting payload: <webvulscan>
+07:33:59:0459 ,begin_scan, Submitting payload: javascript:alert(webvulscan)
+07:33:59:0459 ,begin_scan, Submitting payload: <webvulscan>
+07:33:59:0459 ,begin_scan, Submitting payload: javascript:alert(webvulscan)
+07:33:59:0459 ,begin_scan, Starting Reflected XXS test function on http://vul.handykartsweb.com/index.php
+07:33:59:0459 ,begin_scan, Checking what response code is received from http://vul.handykartsweb.com/index.php
+07:33:59:0459 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/index.php
+07:33:59:0459 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php
+07:33:59:0459 ,begin_scan, Received response code: 200
+07:33:59:0459 ,begin_scan, Check if http://vul.handykartsweb.com/index.php contains parameters
+07:33:59:0459 ,begin_scan, Searching http://vul.handykartsweb.com/index.php for forms
+07:33:59:0459 ,begin_scan, Found form on http://vul.handykartsweb.com/index.php:   post login.php 1
+07:33:59:0459 ,begin_scan, Found input field on http://vul.handykartsweb.com/index.php:  email   Email text 1
+07:33:59:0459 ,begin_scan, Found input field on http://vul.handykartsweb.com/index.php:  password   Password text 1
+07:33:59:0459 ,begin_scan, Found input field on http://vul.handykartsweb.com/index.php:  submit   Log in submit 1
+07:33:59:0459 ,begin_scan, Found input field on http://vul.handykartsweb.com/index.php:     Register button 1
+07:33:59:0459 ,begin_scan, Beginning testing of forms
+07:33:59:0459 ,begin_scan, Beginning testing of form on http://vul.handykartsweb.com/index.php:   post login.php
+07:33:59:0459 ,begin_scan, Beginning testing input fields of form on http://vul.handykartsweb.com/index.php:   post login.php
+07:33:59:0459 ,begin_scan, Submitting payload: <webvulscan>
+07:33:59:0459 ,begin_scan, Submitting payload: javascript:alert(webvulscan)
+07:33:59:0459 ,begin_scan, Submitting payload: <webvulscan>
+07:33:59:0459 ,begin_scan, Submitting payload: javascript:alert(webvulscan)
+07:33:59:0459 ,begin_scan, Submitting payload: <webvulscan>
+07:33:59:0459 ,begin_scan, Submitting payload: javascript:alert(webvulscan)
+07:33:59:0459 ,begin_scan, Submitting payload: <webvulscan>
+07:33:59:0459 ,begin_scan, Submitting payload: javascript:alert(webvulscan)
+07:33:59:0459 ,begin_scan, Starting Reflected XXS test function on http://vul.handykartsweb.com/login.php
+07:33:59:0459 ,begin_scan, Checking what response code is received from http://vul.handykartsweb.com/login.php
+07:33:59:0459 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:33:59:0459 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:33:59:0459 ,begin_scan, Received response code: 200
+07:33:59:0459 ,begin_scan, Check if http://vul.handykartsweb.com/login.php contains parameters
+07:33:59:0459 ,begin_scan, Searching http://vul.handykartsweb.com/login.php for forms
+07:33:59:0459 ,begin_scan, Found form on http://vul.handykartsweb.com/login.php:   post login.php 1
+07:33:59:0459 ,begin_scan, Found input field on http://vul.handykartsweb.com/login.php:  email   Email text 1
+07:33:59:0459 ,begin_scan, Found input field on http://vul.handykartsweb.com/login.php:  password   Password text 1
+07:33:59:0459 ,begin_scan, Found input field on http://vul.handykartsweb.com/login.php:  submit   Log in submit 1
+07:33:59:0459 ,begin_scan, Found input field on http://vul.handykartsweb.com/login.php:     Register button 1
+07:33:59:0459 ,begin_scan, Beginning testing of forms
+07:33:59:0459 ,begin_scan, Beginning testing of form on http://vul.handykartsweb.com/login.php:   post login.php
+07:33:59:0459 ,begin_scan, Beginning testing input fields of form on http://vul.handykartsweb.com/login.php:   post login.php
+07:33:59:0459 ,begin_scan, Submitting payload: <webvulscan>
+07:33:59:0459 ,begin_scan, Submitting payload: javascript:alert(webvulscan)
+07:33:59:0459 ,begin_scan, Submitting payload: <webvulscan>
+07:33:59:0459 ,begin_scan, Submitting payload: javascript:alert(webvulscan)
+07:33:59:0459 ,begin_scan, Submitting payload: <webvulscan>
+07:33:59:0459 ,begin_scan, Submitting payload: javascript:alert(webvulscan)
+07:33:59:0459 ,begin_scan, Submitting payload: <webvulscan>
+07:33:59:0459 ,begin_scan, Submitting payload: javascript:alert(webvulscan)
+07:33:59:0459 ,begin_scan, Starting Reflected XXS test function on http://vul.handykartsweb.com/about.php
+07:33:59:0459 ,begin_scan, Checking what response code is received from http://vul.handykartsweb.com/about.php
+07:33:59:0459 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/about.php
+07:33:59:0459 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php
+07:33:59:0459 ,begin_scan, Received response code: 200
+07:33:59:0459 ,begin_scan, Check if http://vul.handykartsweb.com/about.php contains parameters
+07:33:59:0459 ,begin_scan, Searching http://vul.handykartsweb.com/about.php for forms
+07:33:59:0459 ,begin_scan, Found form on http://vul.handykartsweb.com/about.php:   post login.php 1
+07:33:59:0459 ,begin_scan, Found input field on http://vul.handykartsweb.com/about.php:  email   Email text 1
+07:33:59:0459 ,begin_scan, Found input field on http://vul.handykartsweb.com/about.php:  password   Password text 1
+07:33:59:0459 ,begin_scan, Found input field on http://vul.handykartsweb.com/about.php:  submit   Log in submit 1
+07:33:59:0459 ,begin_scan, Found input field on http://vul.handykartsweb.com/about.php:     Register button 1
+07:33:59:0459 ,begin_scan, Beginning testing of forms
+07:33:59:0459 ,begin_scan, Beginning testing of form on http://vul.handykartsweb.com/about.php:   post login.php
+07:33:59:0459 ,begin_scan, Beginning testing input fields of form on http://vul.handykartsweb.com/about.php:   post login.php
+07:33:59:0459 ,begin_scan, Submitting payload: <webvulscan>
+07:33:59:0459 ,begin_scan, Submitting payload: javascript:alert(webvulscan)
+07:33:59:0459 ,begin_scan, Submitting payload: <webvulscan>
+07:33:59:0459 ,begin_scan, Submitting payload: javascript:alert(webvulscan)
+07:34:00:0400 ,begin_scan, Submitting payload: <webvulscan>
+07:34:00:0400 ,begin_scan, Submitting payload: javascript:alert(webvulscan)
+07:34:00:0400 ,begin_scan, Submitting payload: <webvulscan>
+07:34:00:0400 ,begin_scan, Submitting payload: javascript:alert(webvulscan)
+07:34:00:0400 ,begin_scan, Starting Reflected XXS test function on http://vul.handykartsweb.com/crawler.php
+07:34:00:0400 ,begin_scan, Checking what response code is received from http://vul.handykartsweb.com/crawler.php
+07:34:00:0400 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/crawler.php
+07:34:00:0400 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php
+07:34:00:0400 ,begin_scan, Received response code: 200
+07:34:00:0400 ,begin_scan, Check if http://vul.handykartsweb.com/crawler.php contains parameters
+07:34:00:0400 ,begin_scan, Searching http://vul.handykartsweb.com/crawler.php for forms
+07:34:00:0400 ,begin_scan, Found form on http://vul.handykartsweb.com/crawler.php:   post login.php 1
+07:34:00:0400 ,begin_scan, Found input field on http://vul.handykartsweb.com/crawler.php:  email   Email text 1
+07:34:00:0400 ,begin_scan, Found input field on http://vul.handykartsweb.com/crawler.php:  password   Password text 1
+07:34:00:0400 ,begin_scan, Found input field on http://vul.handykartsweb.com/crawler.php:  submit   Log in submit 1
+07:34:00:0400 ,begin_scan, Found input field on http://vul.handykartsweb.com/crawler.php:     Register button 1
+07:34:00:0400 ,begin_scan, Beginning testing of forms
+07:34:00:0400 ,begin_scan, Beginning testing of form on http://vul.handykartsweb.com/crawler.php:   post login.php
+07:34:00:0400 ,begin_scan, Beginning testing input fields of form on http://vul.handykartsweb.com/crawler.php:   post login.php
+07:34:00:0400 ,begin_scan, Submitting payload: <webvulscan>
+07:34:00:0400 ,begin_scan, Submitting payload: javascript:alert(webvulscan)
+07:34:00:0400 ,begin_scan, Submitting payload: <webvulscan>
+07:34:00:0400 ,begin_scan, Submitting payload: javascript:alert(webvulscan)
+07:34:00:0400 ,begin_scan, Submitting payload: <webvulscan>
+07:34:00:0400 ,begin_scan, Submitting payload: javascript:alert(webvulscan)
+07:34:00:0400 ,begin_scan, Submitting payload: <webvulscan>
+07:34:00:0400 ,begin_scan, Submitting payload: javascript:alert(webvulscan)
+07:34:00:0400 ,begin_scan, Starting Reflected XXS test function on http://vul.handykartsweb.com/scanner.php
+07:34:00:0400 ,begin_scan, Checking what response code is received from http://vul.handykartsweb.com/scanner.php
+07:34:00:0400 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/scanner.php
+07:34:00:0400 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php
+07:34:00:0400 ,begin_scan, Received response code: 200
+07:34:00:0400 ,begin_scan, Check if http://vul.handykartsweb.com/scanner.php contains parameters
+07:34:00:0400 ,begin_scan, Searching http://vul.handykartsweb.com/scanner.php for forms
+07:34:00:0400 ,begin_scan, Found form on http://vul.handykartsweb.com/scanner.php:   post login.php 1
+07:34:00:0400 ,begin_scan, Found input field on http://vul.handykartsweb.com/scanner.php:  email   Email text 1
+07:34:00:0400 ,begin_scan, Found input field on http://vul.handykartsweb.com/scanner.php:  password   Password text 1
+07:34:00:0400 ,begin_scan, Found input field on http://vul.handykartsweb.com/scanner.php:  submit   Log in submit 1
+07:34:00:0400 ,begin_scan, Found input field on http://vul.handykartsweb.com/scanner.php:     Register button 1
+07:34:00:0400 ,begin_scan, Beginning testing of forms
+07:34:00:0400 ,begin_scan, Beginning testing of form on http://vul.handykartsweb.com/scanner.php:   post login.php
+07:34:00:0400 ,begin_scan, Beginning testing input fields of form on http://vul.handykartsweb.com/scanner.php:   post login.php
+07:34:00:0400 ,begin_scan, Submitting payload: <webvulscan>
+07:34:00:0400 ,begin_scan, Submitting payload: javascript:alert(webvulscan)
+07:34:00:0400 ,begin_scan, Submitting payload: <webvulscan>
+07:34:00:0400 ,begin_scan, Submitting payload: javascript:alert(webvulscan)
+07:34:00:0400 ,begin_scan, Submitting payload: <webvulscan>
+07:34:00:0400 ,begin_scan, Submitting payload: javascript:alert(webvulscan)
+07:34:00:0400 ,begin_scan, Submitting payload: <webvulscan>
+07:34:00:0400 ,begin_scan, Submitting payload: javascript:alert(webvulscan)
+07:34:00:0400 ,begin_scan, Starting Reflected XXS test function on http://vul.handykartsweb.com/history.php
+07:34:00:0400 ,begin_scan, Checking what response code is received from http://vul.handykartsweb.com/history.php
+07:34:00:0400 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/history.php
+07:34:00:0400 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php
+07:34:00:0400 ,begin_scan, Received response code: 200
+07:34:00:0400 ,begin_scan, Check if http://vul.handykartsweb.com/history.php contains parameters
+07:34:00:0400 ,begin_scan, Searching http://vul.handykartsweb.com/history.php for forms
+07:34:00:0400 ,begin_scan, Found form on http://vul.handykartsweb.com/history.php:   post login.php 1
+07:34:00:0400 ,begin_scan, Found input field on http://vul.handykartsweb.com/history.php:  email   Email text 1
+07:34:00:0400 ,begin_scan, Found input field on http://vul.handykartsweb.com/history.php:  password   Password text 1
+07:34:00:0400 ,begin_scan, Found input field on http://vul.handykartsweb.com/history.php:  submit   Log in submit 1
+07:34:00:0400 ,begin_scan, Found input field on http://vul.handykartsweb.com/history.php:     Register button 1
+07:34:00:0400 ,begin_scan, Beginning testing of forms
+07:34:00:0400 ,begin_scan, Beginning testing of form on http://vul.handykartsweb.com/history.php:   post login.php
+07:34:00:0400 ,begin_scan, Beginning testing input fields of form on http://vul.handykartsweb.com/history.php:   post login.php
+07:34:00:0400 ,begin_scan, Submitting payload: <webvulscan>
+07:34:00:0400 ,begin_scan, Submitting payload: javascript:alert(webvulscan)
+07:34:00:0400 ,begin_scan, Submitting payload: <webvulscan>
+07:34:00:0400 ,begin_scan, Submitting payload: javascript:alert(webvulscan)
+07:34:00:0400 ,begin_scan, Submitting payload: <webvulscan>
+07:34:00:0400 ,begin_scan, Submitting payload: javascript:alert(webvulscan)
+07:34:00:0400 ,begin_scan, Submitting payload: <webvulscan>
+07:34:00:0400 ,begin_scan, Submitting payload: javascript:alert(webvulscan)
+07:34:00:0400 ,begin_scan, Starting Reflected XXS test function on http://vul.handykartsweb.com/register.php
+07:34:00:0400 ,begin_scan, Checking what response code is received from http://vul.handykartsweb.com/register.php
+07:34:00:0400 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/register.php
+07:34:00:0400 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php
+07:34:00:0400 ,begin_scan, Received response code: 200
+07:34:00:0400 ,begin_scan, Check if http://vul.handykartsweb.com/register.php contains parameters
+07:34:00:0400 ,begin_scan, Searching http://vul.handykartsweb.com/register.php for forms
+07:34:00:0400 ,begin_scan, Found form on http://vul.handykartsweb.com/register.php:   post login.php 1
+07:34:00:0400 ,begin_scan, Found input field on http://vul.handykartsweb.com/register.php:  email   Email text 1
+07:34:00:0400 ,begin_scan, Found input field on http://vul.handykartsweb.com/register.php:  password   Password text 1
+07:34:00:0400 ,begin_scan, Found input field on http://vul.handykartsweb.com/register.php:  submit   Log in submit 1
+07:34:00:0400 ,begin_scan, Found input field on http://vul.handykartsweb.com/register.php:     Register button 1
+07:34:00:0400 ,begin_scan, Found form on http://vul.handykartsweb.com/register.php:   post register.php 2
+07:34:00:0400 ,begin_scan, Found input field on http://vul.handykartsweb.com/register.php:  regusername   Username text 2
+07:34:00:0400 ,begin_scan, Found input field on http://vul.handykartsweb.com/register.php:  regpassword   Password text 2
+07:34:00:0400 ,begin_scan, Found input field on http://vul.handykartsweb.com/register.php:  regpassword2   Confirm Password text 2
+07:34:00:0400 ,begin_scan, Found input field on http://vul.handykartsweb.com/register.php:  email   Email text 2
+07:34:00:0400 ,begin_scan, Found input field on http://vul.handykartsweb.com/register.php:  submit   Register submit 2
+07:34:00:0400 ,begin_scan, Found input field on http://vul.handykartsweb.com/register.php:  reset   Reset reset 2
+07:34:00:0400 ,begin_scan, Beginning testing of forms
+07:34:00:0400 ,begin_scan, Beginning testing of form on http://vul.handykartsweb.com/register.php:   post login.php
+07:34:00:0400 ,begin_scan, Beginning testing input fields of form on http://vul.handykartsweb.com/register.php:   post login.php
+07:34:00:0400 ,begin_scan, Submitting payload: <webvulscan>
+07:34:00:0400 ,begin_scan, Submitting payload: javascript:alert(webvulscan)
+07:34:00:0400 ,begin_scan, Submitting payload: <webvulscan>
+07:34:00:0400 ,begin_scan, Submitting payload: javascript:alert(webvulscan)
+07:34:00:0400 ,begin_scan, Submitting payload: <webvulscan>
+07:34:00:0400 ,begin_scan, Submitting payload: javascript:alert(webvulscan)
+07:34:00:0400 ,begin_scan, Submitting payload: <webvulscan>
+07:34:00:0400 ,begin_scan, Submitting payload: javascript:alert(webvulscan)
+07:34:00:0400 ,begin_scan, Beginning testing of form on http://vul.handykartsweb.com/register.php:   post register.php
+07:34:00:0400 ,begin_scan, Beginning testing input fields of form on http://vul.handykartsweb.com/register.php:   post register.php
+07:34:00:0400 ,begin_scan, Submitting payload: <webvulscan>
+07:34:00:0400 ,begin_scan, Submitting payload: javascript:alert(webvulscan)
+07:34:00:0400 ,begin_scan, Submitting payload: <webvulscan>
+07:34:00:0400 ,begin_scan, Submitting payload: javascript:alert(webvulscan)
+07:34:00:0400 ,begin_scan, Submitting payload: <webvulscan>
+07:34:00:0400 ,begin_scan, Submitting payload: javascript:alert(webvulscan)
+07:34:00:0400 ,begin_scan, Submitting payload: <webvulscan>
+07:34:00:0400 ,begin_scan, Submitting payload: javascript:alert(webvulscan)
+07:34:00:0400 ,begin_scan, Submitting payload: <webvulscan>
+07:34:00:0400 ,begin_scan, Submitting payload: javascript:alert(webvulscan)
+07:34:00:0400 ,begin_scan, Submitting payload: <webvulscan>
+07:34:00:0400 ,begin_scan, Submitting payload: javascript:alert(webvulscan)
+07:34:00:0400 ,begin_scan, Finished Reflected XSS testing of all URLS for test: 19
+07:34:00:0400 ,begin_scan, Beginning SQL Injection testing on each of the URLs
+07:34:00:0400 ,begin_scan, Starting SQL Injection test function on http://vul.handykartsweb.com/
+07:34:00:0400 ,begin_scan, Checking what response code is received from http://vul.handykartsweb.com/
+07:34:00:0400 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/
+07:34:00:0400 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/
+07:34:00:0400 ,begin_scan, Received response code: 200
+07:34:00:0400 ,begin_scan, Successfully got contents from http://vul.handykartsweb.com/
+07:34:00:0400 ,begin_scan, Check if http://vul.handykartsweb.com/ contains parameters
+07:34:00:0400 ,begin_scan, Searching http://vul.handykartsweb.com/ for forms
+07:34:00:0400 ,begin_scan, Found form on http://vul.handykartsweb.com/:   post login.php 1
+07:34:00:0400 ,begin_scan, Found input field on http://vul.handykartsweb.com/:  email   Email text 1
+07:34:00:0400 ,begin_scan, Found input field on http://vul.handykartsweb.com/:  password   Password text 1
+07:34:00:0400 ,begin_scan, Found input field on http://vul.handykartsweb.com/:  submit   Log in submit 1
+07:34:00:0400 ,begin_scan, Found input field on http://vul.handykartsweb.com/:     Register button 1
+07:34:00:0400 ,begin_scan, Beginning testing of forms
+07:34:00:0400 ,begin_scan, Beginning testing of form on http://vul.handykartsweb.com/:   post login.php
+07:34:00:0400 ,begin_scan, Beginning testing input fields of form on http://vul.handykartsweb.com/:   post login.php
+07:34:00:0400 ,begin_scan, Submitting payload: ', to input field: email
+07:34:00:0400 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:00:0400 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:00:0400 ,begin_scan, Submitting payload: ", to input field: email
+07:34:00:0400 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:00:0400 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:00:0400 ,begin_scan, Submitting payload: ;, to input field: email
+07:34:00:0400 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:00:0400 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:00:0400 ,begin_scan, Submitting payload: ), to input field: email
+07:34:00:0400 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:00:0400 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:00:0400 ,begin_scan, Submitting payload: (, to input field: email
+07:34:00:0400 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:00:0400 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:01:0401 ,begin_scan, Submitting payload: ., to input field: email
+07:34:01:0401 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:01:0401 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:01:0401 ,begin_scan, Submitting payload: --, to input field: email
+07:34:01:0401 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:01:0401 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:01:0401 ,begin_scan, Submitting payload: ', to input field: password
+07:34:01:0401 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:01:0401 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:01:0401 ,begin_scan, Submitting payload: ", to input field: password
+07:34:01:0401 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:01:0401 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:01:0401 ,begin_scan, Submitting payload: ;, to input field: password
+07:34:01:0401 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:01:0401 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:01:0401 ,begin_scan, Submitting payload: ), to input field: password
+07:34:01:0401 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:01:0401 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:01:0401 ,begin_scan, Submitting payload: (, to input field: password
+07:34:01:0401 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:01:0401 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:01:0401 ,begin_scan, Submitting payload: ., to input field: password
+07:34:01:0401 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:01:0401 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:01:0401 ,begin_scan, Submitting payload: --, to input field: password
+07:34:01:0401 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:01:0401 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:01:0401 ,begin_scan, Submitting payload: ', to input field: submit
+07:34:01:0401 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:01:0401 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:01:0401 ,begin_scan, Submitting payload: ", to input field: submit
+07:34:01:0401 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:01:0401 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:01:0401 ,begin_scan, Submitting payload: ;, to input field: submit
+07:34:01:0401 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:01:0401 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:01:0401 ,begin_scan, Submitting payload: ), to input field: submit
+07:34:06:0406 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:06:0406 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:06:0406 ,begin_scan, Submitting payload: (, to input field: submit
+07:34:06:0406 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:06:0406 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:06:0406 ,begin_scan, Submitting payload: ., to input field: submit
+07:34:06:0406 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:06:0406 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:06:0406 ,begin_scan, Submitting payload: --, to input field: submit
+07:34:06:0406 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:06:0406 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:06:0406 ,begin_scan, Submitting payload: ', to input field: 
+07:34:06:0406 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:06:0406 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:06:0406 ,begin_scan, Submitting payload: ", to input field: 
+07:34:06:0406 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:06:0406 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:06:0406 ,begin_scan, Submitting payload: ;, to input field: 
+07:34:06:0406 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:06:0406 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:06:0406 ,begin_scan, Submitting payload: ), to input field: 
+07:34:06:0406 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:06:0406 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:06:0406 ,begin_scan, Submitting payload: (, to input field: 
+07:34:06:0406 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:06:0406 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Submitting payload: ., to input field: 
+07:34:07:0407 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Submitting payload: --, to input field: 
+07:34:07:0407 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Starting SQL Injection test function on http://vul.handykartsweb.com/index.php
+07:34:07:0407 ,begin_scan, Checking what response code is received from http://vul.handykartsweb.com/index.php
+07:34:07:0407 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/index.php
+07:34:07:0407 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php
+07:34:07:0407 ,begin_scan, Received response code: 200
+07:34:07:0407 ,begin_scan, Successfully got contents from http://vul.handykartsweb.com/index.php
+07:34:07:0407 ,begin_scan, Check if http://vul.handykartsweb.com/index.php contains parameters
+07:34:07:0407 ,begin_scan, Searching http://vul.handykartsweb.com/index.php for forms
+07:34:07:0407 ,begin_scan, Found form on http://vul.handykartsweb.com/index.php:   post login.php 1
+07:34:07:0407 ,begin_scan, Found input field on http://vul.handykartsweb.com/index.php:  email   Email text 1
+07:34:07:0407 ,begin_scan, Found input field on http://vul.handykartsweb.com/index.php:  password   Password text 1
+07:34:07:0407 ,begin_scan, Found input field on http://vul.handykartsweb.com/index.php:  submit   Log in submit 1
+07:34:07:0407 ,begin_scan, Found input field on http://vul.handykartsweb.com/index.php:     Register button 1
+07:34:07:0407 ,begin_scan, Beginning testing of forms
+07:34:07:0407 ,begin_scan, Beginning testing of form on http://vul.handykartsweb.com/index.php:   post login.php
+07:34:07:0407 ,begin_scan, Beginning testing input fields of form on http://vul.handykartsweb.com/index.php:   post login.php
+07:34:07:0407 ,begin_scan, Submitting payload: ', to input field: email
+07:34:07:0407 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Submitting payload: ", to input field: email
+07:34:07:0407 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Submitting payload: ;, to input field: email
+07:34:07:0407 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Submitting payload: ), to input field: email
+07:34:07:0407 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Submitting payload: (, to input field: email
+07:34:07:0407 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Submitting payload: ., to input field: email
+07:34:07:0407 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Submitting payload: --, to input field: email
+07:34:07:0407 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Submitting payload: ', to input field: password
+07:34:07:0407 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Submitting payload: ", to input field: password
+07:34:07:0407 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Submitting payload: ;, to input field: password
+07:34:07:0407 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Submitting payload: ), to input field: password
+07:34:07:0407 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Submitting payload: (, to input field: password
+07:34:07:0407 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Submitting payload: ., to input field: password
+07:34:07:0407 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Submitting payload: --, to input field: password
+07:34:07:0407 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Submitting payload: ', to input field: submit
+07:34:07:0407 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Submitting payload: ", to input field: submit
+07:34:07:0407 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Submitting payload: ;, to input field: submit
+07:34:07:0407 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Submitting payload: ), to input field: submit
+07:34:07:0407 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Submitting payload: (, to input field: submit
+07:34:07:0407 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Submitting payload: ., to input field: submit
+07:34:07:0407 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Submitting payload: --, to input field: submit
+07:34:07:0407 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Submitting payload: ', to input field: 
+07:34:07:0407 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Submitting payload: ", to input field: 
+07:34:07:0407 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Submitting payload: ;, to input field: 
+07:34:07:0407 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Submitting payload: ), to input field: 
+07:34:07:0407 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Submitting payload: (, to input field: 
+07:34:07:0407 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Submitting payload: ., to input field: 
+07:34:07:0407 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Submitting payload: --, to input field: 
+07:34:07:0407 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Starting SQL Injection test function on http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Checking what response code is received from http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Received response code: 200
+07:34:07:0407 ,begin_scan, Successfully got contents from http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Check if http://vul.handykartsweb.com/login.php contains parameters
+07:34:07:0407 ,begin_scan, Searching http://vul.handykartsweb.com/login.php for forms
+07:34:07:0407 ,begin_scan, Found form on http://vul.handykartsweb.com/login.php:   post login.php 1
+07:34:07:0407 ,begin_scan, Found input field on http://vul.handykartsweb.com/login.php:  email   Email text 1
+07:34:07:0407 ,begin_scan, Found input field on http://vul.handykartsweb.com/login.php:  password   Password text 1
+07:34:07:0407 ,begin_scan, Found input field on http://vul.handykartsweb.com/login.php:  submit   Log in submit 1
+07:34:07:0407 ,begin_scan, Found input field on http://vul.handykartsweb.com/login.php:     Register button 1
+07:34:07:0407 ,begin_scan, Beginning testing of forms
+07:34:07:0407 ,begin_scan, Beginning testing of form on http://vul.handykartsweb.com/login.php:   post login.php
+07:34:07:0407 ,begin_scan, Beginning testing input fields of form on http://vul.handykartsweb.com/login.php:   post login.php
+07:34:07:0407 ,begin_scan, Submitting payload: ', to input field: email
+07:34:07:0407 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Submitting payload: ", to input field: email
+07:34:07:0407 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Submitting payload: ;, to input field: email
+07:34:07:0407 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Submitting payload: ), to input field: email
+07:34:07:0407 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Submitting payload: (, to input field: email
+07:34:07:0407 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Submitting payload: ., to input field: email
+07:34:07:0407 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Submitting payload: --, to input field: email
+07:34:07:0407 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Submitting payload: ', to input field: password
+07:34:07:0407 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:07:0407 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: ", to input field: password
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: ;, to input field: password
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: ), to input field: password
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: (, to input field: password
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: ., to input field: password
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: --, to input field: password
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: ', to input field: submit
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: ", to input field: submit
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: ;, to input field: submit
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: ), to input field: submit
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: (, to input field: submit
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: ., to input field: submit
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: --, to input field: submit
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: ', to input field: 
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: ", to input field: 
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: ;, to input field: 
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: ), to input field: 
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: (, to input field: 
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: ., to input field: 
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: --, to input field: 
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Starting SQL Injection test function on http://vul.handykartsweb.com/about.php
+07:34:08:0408 ,begin_scan, Checking what response code is received from http://vul.handykartsweb.com/about.php
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/about.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php
+07:34:08:0408 ,begin_scan, Received response code: 200
+07:34:08:0408 ,begin_scan, Successfully got contents from http://vul.handykartsweb.com/about.php
+07:34:08:0408 ,begin_scan, Check if http://vul.handykartsweb.com/about.php contains parameters
+07:34:08:0408 ,begin_scan, Searching http://vul.handykartsweb.com/about.php for forms
+07:34:08:0408 ,begin_scan, Found form on http://vul.handykartsweb.com/about.php:   post login.php 1
+07:34:08:0408 ,begin_scan, Found input field on http://vul.handykartsweb.com/about.php:  email   Email text 1
+07:34:08:0408 ,begin_scan, Found input field on http://vul.handykartsweb.com/about.php:  password   Password text 1
+07:34:08:0408 ,begin_scan, Found input field on http://vul.handykartsweb.com/about.php:  submit   Log in submit 1
+07:34:08:0408 ,begin_scan, Found input field on http://vul.handykartsweb.com/about.php:     Register button 1
+07:34:08:0408 ,begin_scan, Beginning testing of forms
+07:34:08:0408 ,begin_scan, Beginning testing of form on http://vul.handykartsweb.com/about.php:   post login.php
+07:34:08:0408 ,begin_scan, Beginning testing input fields of form on http://vul.handykartsweb.com/about.php:   post login.php
+07:34:08:0408 ,begin_scan, Submitting payload: ', to input field: email
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: ", to input field: email
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: ;, to input field: email
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: ), to input field: email
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: (, to input field: email
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: ., to input field: email
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: --, to input field: email
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: ', to input field: password
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: ", to input field: password
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: ;, to input field: password
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: ), to input field: password
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: (, to input field: password
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: ., to input field: password
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: --, to input field: password
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: ', to input field: submit
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: ", to input field: submit
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: ;, to input field: submit
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: ), to input field: submit
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: (, to input field: submit
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: ., to input field: submit
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: --, to input field: submit
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: ', to input field: 
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: ", to input field: 
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: ;, to input field: 
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: ), to input field: 
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: (, to input field: 
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: ., to input field: 
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Submitting payload: --, to input field: 
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:08:0408 ,begin_scan, Starting SQL Injection test function on http://vul.handykartsweb.com/crawler.php
+07:34:08:0408 ,begin_scan, Checking what response code is received from http://vul.handykartsweb.com/crawler.php
+07:34:08:0408 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/crawler.php
+07:34:08:0408 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php
+07:34:09:0409 ,begin_scan, Received response code: 200
+07:34:09:0409 ,begin_scan, Successfully got contents from http://vul.handykartsweb.com/crawler.php
+07:34:09:0409 ,begin_scan, Check if http://vul.handykartsweb.com/crawler.php contains parameters
+07:34:09:0409 ,begin_scan, Searching http://vul.handykartsweb.com/crawler.php for forms
+07:34:09:0409 ,begin_scan, Found form on http://vul.handykartsweb.com/crawler.php:   post login.php 1
+07:34:09:0409 ,begin_scan, Found input field on http://vul.handykartsweb.com/crawler.php:  email   Email text 1
+07:34:09:0409 ,begin_scan, Found input field on http://vul.handykartsweb.com/crawler.php:  password   Password text 1
+07:34:09:0409 ,begin_scan, Found input field on http://vul.handykartsweb.com/crawler.php:  submit   Log in submit 1
+07:34:09:0409 ,begin_scan, Found input field on http://vul.handykartsweb.com/crawler.php:     Register button 1
+07:34:09:0409 ,begin_scan, Beginning testing of forms
+07:34:09:0409 ,begin_scan, Beginning testing of form on http://vul.handykartsweb.com/crawler.php:   post login.php
+07:34:09:0409 ,begin_scan, Beginning testing input fields of form on http://vul.handykartsweb.com/crawler.php:   post login.php
+07:34:09:0409 ,begin_scan, Submitting payload: ', to input field: email
+07:34:09:0409 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Submitting payload: ", to input field: email
+07:34:09:0409 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Submitting payload: ;, to input field: email
+07:34:09:0409 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Submitting payload: ), to input field: email
+07:34:09:0409 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Submitting payload: (, to input field: email
+07:34:09:0409 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Submitting payload: ., to input field: email
+07:34:09:0409 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Submitting payload: --, to input field: email
+07:34:09:0409 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Submitting payload: ', to input field: password
+07:34:09:0409 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Submitting payload: ", to input field: password
+07:34:09:0409 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Submitting payload: ;, to input field: password
+07:34:09:0409 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Submitting payload: ), to input field: password
+07:34:09:0409 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Submitting payload: (, to input field: password
+07:34:09:0409 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Submitting payload: ., to input field: password
+07:34:09:0409 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Submitting payload: --, to input field: password
+07:34:09:0409 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Submitting payload: ', to input field: submit
+07:34:09:0409 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Submitting payload: ", to input field: submit
+07:34:09:0409 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Submitting payload: ;, to input field: submit
+07:34:09:0409 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Submitting payload: ), to input field: submit
+07:34:09:0409 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Submitting payload: (, to input field: submit
+07:34:09:0409 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Submitting payload: ., to input field: submit
+07:34:09:0409 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Submitting payload: --, to input field: submit
+07:34:09:0409 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Submitting payload: ', to input field: 
+07:34:09:0409 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Submitting payload: ", to input field: 
+07:34:09:0409 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Submitting payload: ;, to input field: 
+07:34:09:0409 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Submitting payload: ), to input field: 
+07:34:09:0409 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Submitting payload: (, to input field: 
+07:34:09:0409 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Submitting payload: ., to input field: 
+07:34:09:0409 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Submitting payload: --, to input field: 
+07:34:09:0409 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Starting SQL Injection test function on http://vul.handykartsweb.com/scanner.php
+07:34:09:0409 ,begin_scan, Checking what response code is received from http://vul.handykartsweb.com/scanner.php
+07:34:09:0409 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/scanner.php
+07:34:09:0409 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php
+07:34:09:0409 ,begin_scan, Received response code: 200
+07:34:09:0409 ,begin_scan, Successfully got contents from http://vul.handykartsweb.com/scanner.php
+07:34:09:0409 ,begin_scan, Check if http://vul.handykartsweb.com/scanner.php contains parameters
+07:34:09:0409 ,begin_scan, Searching http://vul.handykartsweb.com/scanner.php for forms
+07:34:09:0409 ,begin_scan, Found form on http://vul.handykartsweb.com/scanner.php:   post login.php 1
+07:34:09:0409 ,begin_scan, Found input field on http://vul.handykartsweb.com/scanner.php:  email   Email text 1
+07:34:09:0409 ,begin_scan, Found input field on http://vul.handykartsweb.com/scanner.php:  password   Password text 1
+07:34:09:0409 ,begin_scan, Found input field on http://vul.handykartsweb.com/scanner.php:  submit   Log in submit 1
+07:34:09:0409 ,begin_scan, Found input field on http://vul.handykartsweb.com/scanner.php:     Register button 1
+07:34:09:0409 ,begin_scan, Beginning testing of forms
+07:34:09:0409 ,begin_scan, Beginning testing of form on http://vul.handykartsweb.com/scanner.php:   post login.php
+07:34:09:0409 ,begin_scan, Beginning testing input fields of form on http://vul.handykartsweb.com/scanner.php:   post login.php
+07:34:09:0409 ,begin_scan, Submitting payload: ', to input field: email
+07:34:09:0409 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Submitting payload: ", to input field: email
+07:34:09:0409 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Submitting payload: ;, to input field: email
+07:34:09:0409 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Submitting payload: ), to input field: email
+07:34:09:0409 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Submitting payload: (, to input field: email
+07:34:09:0409 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Submitting payload: ., to input field: email
+07:34:09:0409 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Submitting payload: --, to input field: email
+07:34:09:0409 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Submitting payload: ', to input field: password
+07:34:09:0409 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Submitting payload: ", to input field: password
+07:34:09:0409 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Submitting payload: ;, to input field: password
+07:34:09:0409 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Submitting payload: ), to input field: password
+07:34:09:0409 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Submitting payload: (, to input field: password
+07:34:09:0409 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:09:0409 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: ., to input field: password
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: --, to input field: password
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: ', to input field: submit
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: ", to input field: submit
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: ;, to input field: submit
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: ), to input field: submit
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: (, to input field: submit
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: ., to input field: submit
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: --, to input field: submit
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: ', to input field: 
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: ", to input field: 
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: ;, to input field: 
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: ), to input field: 
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: (, to input field: 
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: ., to input field: 
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: --, to input field: 
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Starting SQL Injection test function on http://vul.handykartsweb.com/history.php
+07:34:10:0410 ,begin_scan, Checking what response code is received from http://vul.handykartsweb.com/history.php
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/history.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php
+07:34:10:0410 ,begin_scan, Received response code: 200
+07:34:10:0410 ,begin_scan, Successfully got contents from http://vul.handykartsweb.com/history.php
+07:34:10:0410 ,begin_scan, Check if http://vul.handykartsweb.com/history.php contains parameters
+07:34:10:0410 ,begin_scan, Searching http://vul.handykartsweb.com/history.php for forms
+07:34:10:0410 ,begin_scan, Found form on http://vul.handykartsweb.com/history.php:   post login.php 1
+07:34:10:0410 ,begin_scan, Found input field on http://vul.handykartsweb.com/history.php:  email   Email text 1
+07:34:10:0410 ,begin_scan, Found input field on http://vul.handykartsweb.com/history.php:  password   Password text 1
+07:34:10:0410 ,begin_scan, Found input field on http://vul.handykartsweb.com/history.php:  submit   Log in submit 1
+07:34:10:0410 ,begin_scan, Found input field on http://vul.handykartsweb.com/history.php:     Register button 1
+07:34:10:0410 ,begin_scan, Beginning testing of forms
+07:34:10:0410 ,begin_scan, Beginning testing of form on http://vul.handykartsweb.com/history.php:   post login.php
+07:34:10:0410 ,begin_scan, Beginning testing input fields of form on http://vul.handykartsweb.com/history.php:   post login.php
+07:34:10:0410 ,begin_scan, Submitting payload: ', to input field: email
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: ", to input field: email
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: ;, to input field: email
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: ), to input field: email
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: (, to input field: email
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: ., to input field: email
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: --, to input field: email
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: ', to input field: password
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: ", to input field: password
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: ;, to input field: password
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: ), to input field: password
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: (, to input field: password
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: ., to input field: password
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: --, to input field: password
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: ', to input field: submit
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: ", to input field: submit
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: ;, to input field: submit
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: ), to input field: submit
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: (, to input field: submit
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: ., to input field: submit
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: --, to input field: submit
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: ', to input field: 
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: ", to input field: 
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: ;, to input field: 
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: ), to input field: 
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: (, to input field: 
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: ., to input field: 
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: --, to input field: 
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Starting SQL Injection test function on http://vul.handykartsweb.com/register.php
+07:34:10:0410 ,begin_scan, Checking what response code is received from http://vul.handykartsweb.com/register.php
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/register.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php
+07:34:10:0410 ,begin_scan, Received response code: 200
+07:34:10:0410 ,begin_scan, Successfully got contents from http://vul.handykartsweb.com/register.php
+07:34:10:0410 ,begin_scan, Check if http://vul.handykartsweb.com/register.php contains parameters
+07:34:10:0410 ,begin_scan, Searching http://vul.handykartsweb.com/register.php for forms
+07:34:10:0410 ,begin_scan, Found form on http://vul.handykartsweb.com/register.php:   post login.php 1
+07:34:10:0410 ,begin_scan, Found input field on http://vul.handykartsweb.com/register.php:  email   Email text 1
+07:34:10:0410 ,begin_scan, Found input field on http://vul.handykartsweb.com/register.php:  password   Password text 1
+07:34:10:0410 ,begin_scan, Found input field on http://vul.handykartsweb.com/register.php:  submit   Log in submit 1
+07:34:10:0410 ,begin_scan, Found input field on http://vul.handykartsweb.com/register.php:     Register button 1
+07:34:10:0410 ,begin_scan, Found form on http://vul.handykartsweb.com/register.php:   post register.php 2
+07:34:10:0410 ,begin_scan, Found input field on http://vul.handykartsweb.com/register.php:  regusername   Username text 2
+07:34:10:0410 ,begin_scan, Found input field on http://vul.handykartsweb.com/register.php:  regpassword   Password text 2
+07:34:10:0410 ,begin_scan, Found input field on http://vul.handykartsweb.com/register.php:  regpassword2   Confirm Password text 2
+07:34:10:0410 ,begin_scan, Found input field on http://vul.handykartsweb.com/register.php:  email   Email text 2
+07:34:10:0410 ,begin_scan, Found input field on http://vul.handykartsweb.com/register.php:  submit   Register submit 2
+07:34:10:0410 ,begin_scan, Found input field on http://vul.handykartsweb.com/register.php:  reset   Reset reset 2
+07:34:10:0410 ,begin_scan, Beginning testing of forms
+07:34:10:0410 ,begin_scan, Beginning testing of form on http://vul.handykartsweb.com/register.php:   post login.php
+07:34:10:0410 ,begin_scan, Beginning testing input fields of form on http://vul.handykartsweb.com/register.php:   post login.php
+07:34:10:0410 ,begin_scan, Submitting payload: ', to input field: email
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: ", to input field: email
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: ;, to input field: email
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: ), to input field: email
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: (, to input field: email
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Submitting payload: ., to input field: email
+07:34:10:0410 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:10:0410 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Submitting payload: --, to input field: email
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Submitting payload: ', to input field: password
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Submitting payload: ", to input field: password
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Submitting payload: ;, to input field: password
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Submitting payload: ), to input field: password
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Submitting payload: (, to input field: password
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Submitting payload: ., to input field: password
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Submitting payload: --, to input field: password
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Submitting payload: ', to input field: submit
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Submitting payload: ", to input field: submit
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Submitting payload: ;, to input field: submit
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Submitting payload: ), to input field: submit
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Submitting payload: (, to input field: submit
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Submitting payload: ., to input field: submit
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Submitting payload: --, to input field: submit
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Submitting payload: ', to input field: 
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Submitting payload: ", to input field: 
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Submitting payload: ;, to input field: 
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Submitting payload: ), to input field: 
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Submitting payload: (, to input field: 
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Submitting payload: ., to input field: 
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Submitting payload: --, to input field: 
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:11:0411 ,begin_scan, Beginning testing of form on http://vul.handykartsweb.com/register.php:   post register.php
+07:34:11:0411 ,begin_scan, Beginning testing input fields of form on http://vul.handykartsweb.com/register.php:   post register.php
+07:34:11:0411 ,begin_scan, Submitting payload: ', to input field: regusername
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Submitting payload: ", to input field: regusername
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Submitting payload: ;, to input field: regusername
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Submitting payload: ), to input field: regusername
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Submitting payload: (, to input field: regusername
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Submitting payload: ., to input field: regusername
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Submitting payload: --, to input field: regusername
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Submitting payload: ', to input field: regpassword
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Submitting payload: ", to input field: regpassword
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Submitting payload: ;, to input field: regpassword
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Submitting payload: ), to input field: regpassword
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Submitting payload: (, to input field: regpassword
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Submitting payload: ., to input field: regpassword
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Submitting payload: --, to input field: regpassword
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Submitting payload: ', to input field: regpassword2
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Submitting payload: ", to input field: regpassword2
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Submitting payload: ;, to input field: regpassword2
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Submitting payload: ), to input field: regpassword2
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Submitting payload: (, to input field: regpassword2
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Submitting payload: ., to input field: regpassword2
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Submitting payload: --, to input field: regpassword2
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Submitting payload: ', to input field: email
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Submitting payload: ", to input field: email
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Submitting payload: ;, to input field: email
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Submitting payload: ), to input field: email
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Submitting payload: (, to input field: email
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Submitting payload: ., to input field: email
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Submitting payload: --, to input field: email
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Submitting payload: ', to input field: submit
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Submitting payload: ", to input field: submit
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Submitting payload: ;, to input field: submit
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Submitting payload: ), to input field: submit
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Submitting payload: (, to input field: submit
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Submitting payload: ., to input field: submit
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Submitting payload: --, to input field: submit
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php
+07:34:11:0411 ,begin_scan, Finished SQL Injection testing of all URLS for test: 19
+07:34:11:0411 ,begin_scan, Beginning testing each of the URLs for Broken Authentication using SQL Injection
+07:34:11:0411 ,begin_scan, Starting Broken Authentication SQLi test function on http://vul.handykartsweb.com/
+07:34:11:0411 ,begin_scan, Checking what response code is received from http://vul.handykartsweb.com/
+07:34:11:0411 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/
+07:34:11:0411 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/
+07:34:11:0411 ,begin_scan, Received response code: 200
+07:34:12:0412 ,begin_scan, Searching http://vul.handykartsweb.com/ for forms
+07:34:12:0412 ,begin_scan, Found form on http://vul.handykartsweb.com/:   post login.php 1
+07:34:12:0412 ,begin_scan, Found input field on http://vul.handykartsweb.com/:  email   Email text 1
+07:34:12:0412 ,begin_scan, Found input field on http://vul.handykartsweb.com/:  password   Password text 1
+07:34:12:0412 ,begin_scan, Found input field on http://vul.handykartsweb.com/:  submit   Log in submit 1
+07:34:12:0412 ,begin_scan, Found input field on http://vul.handykartsweb.com/:     Register button 1
+07:34:12:0412 ,begin_scan, Checking if http://vul.handykartsweb.com/ displays the same page at different intervals
+07:34:12:0412 ,begin_scan, Sending HTTP request number 1 to http://vul.handykartsweb.com/
+07:34:12:0412 ,begin_scan, Sending HTTP request number 2 to http://vul.handykartsweb.com/
+07:34:12:0412 ,begin_scan, Sending HTTP request number 3 to http://vul.handykartsweb.com/
+07:34:12:0412 ,begin_scan, Beginning testing of forms
+07:34:12:0412 ,begin_scan, Beginning testing of form on http://vul.handykartsweb.com/:   post login.php
+07:34:12:0412 ,begin_scan, Beginning testing input fields of form on http://vul.handykartsweb.com/:   post login.php
+07:34:12:0412 ,begin_scan, Using payload: 1'or'1'='1, to all input fields of form w/ action: login.php
+07:34:12:0412 ,begin_scan, Using payload: 1'or'1'='1, to all input fields of form w/ action: login.php
+07:34:12:0412 ,begin_scan, Using payload: 1'or'1'='1, to all input fields of form w/ action: login.php
+07:34:12:0412 ,begin_scan, Using payload: 1'or'1'='1, to all input fields of form w/ action: login.php
+07:34:12:0412 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:12:0412 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:12:0412 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/ to check if it is different than before login attempt
+07:34:12:0412 ,begin_scan, Using payload: 1'or'1'='1';#, to all input fields of form w/ action: login.php
+07:34:12:0412 ,begin_scan, Using payload: 1'or'1'='1';#, to all input fields of form w/ action: login.php
+07:34:12:0412 ,begin_scan, Using payload: 1'or'1'='1';#, to all input fields of form w/ action: login.php
+07:34:12:0412 ,begin_scan, Using payload: 1'or'1'='1';#, to all input fields of form w/ action: login.php
+07:34:12:0412 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:12:0412 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:12:0412 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/ to check if it is different than before login attempt
+07:34:12:0412 ,begin_scan, Starting Broken Authentication SQLi test function on http://vul.handykartsweb.com/index.php
+07:34:12:0412 ,begin_scan, Checking what response code is received from http://vul.handykartsweb.com/index.php
+07:34:12:0412 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/index.php
+07:34:12:0412 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php
+07:34:12:0412 ,begin_scan, Received response code: 200
+07:34:12:0412 ,begin_scan, Searching http://vul.handykartsweb.com/index.php for forms
+07:34:12:0412 ,begin_scan, Found form on http://vul.handykartsweb.com/index.php:   post login.php 1
+07:34:12:0412 ,begin_scan, Found input field on http://vul.handykartsweb.com/index.php:  email   Email text 1
+07:34:12:0412 ,begin_scan, Found input field on http://vul.handykartsweb.com/index.php:  password   Password text 1
+07:34:12:0412 ,begin_scan, Found input field on http://vul.handykartsweb.com/index.php:  submit   Log in submit 1
+07:34:12:0412 ,begin_scan, Found input field on http://vul.handykartsweb.com/index.php:     Register button 1
+07:34:12:0412 ,begin_scan, Checking if http://vul.handykartsweb.com/index.php displays the same page at different intervals
+07:34:12:0412 ,begin_scan, Sending HTTP request number 1 to http://vul.handykartsweb.com/index.php
+07:34:12:0412 ,begin_scan, Sending HTTP request number 2 to http://vul.handykartsweb.com/index.php
+07:34:12:0412 ,begin_scan, Sending HTTP request number 3 to http://vul.handykartsweb.com/index.php
+07:34:12:0412 ,begin_scan, Beginning testing of forms
+07:34:12:0412 ,begin_scan, Beginning testing of form on http://vul.handykartsweb.com/index.php:   post login.php
+07:34:12:0412 ,begin_scan, Beginning testing input fields of form on http://vul.handykartsweb.com/index.php:   post login.php
+07:34:12:0412 ,begin_scan, Using payload: 1'or'1'='1, to all input fields of form w/ action: login.php
+07:34:12:0412 ,begin_scan, Using payload: 1'or'1'='1, to all input fields of form w/ action: login.php
+07:34:12:0412 ,begin_scan, Using payload: 1'or'1'='1, to all input fields of form w/ action: login.php
+07:34:12:0412 ,begin_scan, Using payload: 1'or'1'='1, to all input fields of form w/ action: login.php
+07:34:12:0412 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:12:0412 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:12:0412 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php to check if it is different than before login attempt
+07:34:12:0412 ,begin_scan, Using payload: 1'or'1'='1';#, to all input fields of form w/ action: login.php
+07:34:12:0412 ,begin_scan, Using payload: 1'or'1'='1';#, to all input fields of form w/ action: login.php
+07:34:12:0412 ,begin_scan, Using payload: 1'or'1'='1';#, to all input fields of form w/ action: login.php
+07:34:12:0412 ,begin_scan, Using payload: 1'or'1'='1';#, to all input fields of form w/ action: login.php
+07:34:12:0412 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:12:0412 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:12:0412 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php to check if it is different than before login attempt
+07:34:12:0412 ,begin_scan, Starting Broken Authentication SQLi test function on http://vul.handykartsweb.com/login.php
+07:34:12:0412 ,begin_scan, Checking what response code is received from http://vul.handykartsweb.com/login.php
+07:34:12:0412 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:12:0412 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:12:0412 ,begin_scan, Received response code: 200
+07:34:12:0412 ,begin_scan, Searching http://vul.handykartsweb.com/login.php for forms
+07:34:12:0412 ,begin_scan, Found form on http://vul.handykartsweb.com/login.php:   post login.php 1
+07:34:12:0412 ,begin_scan, Found input field on http://vul.handykartsweb.com/login.php:  email   Email text 1
+07:34:12:0412 ,begin_scan, Found input field on http://vul.handykartsweb.com/login.php:  password   Password text 1
+07:34:12:0412 ,begin_scan, Found input field on http://vul.handykartsweb.com/login.php:  submit   Log in submit 1
+07:34:12:0412 ,begin_scan, Found input field on http://vul.handykartsweb.com/login.php:     Register button 1
+07:34:12:0412 ,begin_scan, Checking if http://vul.handykartsweb.com/login.php displays the same page at different intervals
+07:34:12:0412 ,begin_scan, Sending HTTP request number 1 to http://vul.handykartsweb.com/login.php
+07:34:12:0412 ,begin_scan, Sending HTTP request number 2 to http://vul.handykartsweb.com/login.php
+07:34:13:0413 ,begin_scan, Sending HTTP request number 3 to http://vul.handykartsweb.com/login.php
+07:34:13:0413 ,begin_scan, Beginning testing of forms
+07:34:13:0413 ,begin_scan, Beginning testing of form on http://vul.handykartsweb.com/login.php:   post login.php
+07:34:13:0413 ,begin_scan, Beginning testing input fields of form on http://vul.handykartsweb.com/login.php:   post login.php
+07:34:13:0413 ,begin_scan, Using payload: 1'or'1'='1, to all input fields of form w/ action: login.php
+07:34:13:0413 ,begin_scan, Using payload: 1'or'1'='1, to all input fields of form w/ action: login.php
+07:34:13:0413 ,begin_scan, Using payload: 1'or'1'='1, to all input fields of form w/ action: login.php
+07:34:13:0413 ,begin_scan, Using payload: 1'or'1'='1, to all input fields of form w/ action: login.php
+07:34:13:0413 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:13:0413 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:13:0413 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php to check if it is different than before login attempt
+07:34:13:0413 ,begin_scan, Using payload: 1'or'1'='1';#, to all input fields of form w/ action: login.php
+07:34:13:0413 ,begin_scan, Using payload: 1'or'1'='1';#, to all input fields of form w/ action: login.php
+07:34:13:0413 ,begin_scan, Using payload: 1'or'1'='1';#, to all input fields of form w/ action: login.php
+07:34:13:0413 ,begin_scan, Using payload: 1'or'1'='1';#, to all input fields of form w/ action: login.php
+07:34:13:0413 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:13:0413 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:13:0413 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php to check if it is different than before login attempt
+07:34:13:0413 ,begin_scan, Starting Broken Authentication SQLi test function on http://vul.handykartsweb.com/about.php
+07:34:13:0413 ,begin_scan, Checking what response code is received from http://vul.handykartsweb.com/about.php
+07:34:13:0413 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/about.php
+07:34:13:0413 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php
+07:34:13:0413 ,begin_scan, Received response code: 200
+07:34:13:0413 ,begin_scan, Searching http://vul.handykartsweb.com/about.php for forms
+07:34:13:0413 ,begin_scan, Found form on http://vul.handykartsweb.com/about.php:   post login.php 1
+07:34:13:0413 ,begin_scan, Found input field on http://vul.handykartsweb.com/about.php:  email   Email text 1
+07:34:13:0413 ,begin_scan, Found input field on http://vul.handykartsweb.com/about.php:  password   Password text 1
+07:34:13:0413 ,begin_scan, Found input field on http://vul.handykartsweb.com/about.php:  submit   Log in submit 1
+07:34:13:0413 ,begin_scan, Found input field on http://vul.handykartsweb.com/about.php:     Register button 1
+07:34:13:0413 ,begin_scan, Checking if http://vul.handykartsweb.com/about.php displays the same page at different intervals
+07:34:13:0413 ,begin_scan, Sending HTTP request number 1 to http://vul.handykartsweb.com/about.php
+07:34:13:0413 ,begin_scan, Sending HTTP request number 2 to http://vul.handykartsweb.com/about.php
+07:34:13:0413 ,begin_scan, Sending HTTP request number 3 to http://vul.handykartsweb.com/about.php
+07:34:13:0413 ,begin_scan, Beginning testing of forms
+07:34:13:0413 ,begin_scan, Beginning testing of form on http://vul.handykartsweb.com/about.php:   post login.php
+07:34:13:0413 ,begin_scan, Beginning testing input fields of form on http://vul.handykartsweb.com/about.php:   post login.php
+07:34:13:0413 ,begin_scan, Using payload: 1'or'1'='1, to all input fields of form w/ action: login.php
+07:34:13:0413 ,begin_scan, Using payload: 1'or'1'='1, to all input fields of form w/ action: login.php
+07:34:13:0413 ,begin_scan, Using payload: 1'or'1'='1, to all input fields of form w/ action: login.php
+07:34:13:0413 ,begin_scan, Using payload: 1'or'1'='1, to all input fields of form w/ action: login.php
+07:34:13:0413 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:13:0413 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:13:0413 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php to check if it is different than before login attempt
+07:34:13:0413 ,begin_scan, Using payload: 1'or'1'='1';#, to all input fields of form w/ action: login.php
+07:34:13:0413 ,begin_scan, Using payload: 1'or'1'='1';#, to all input fields of form w/ action: login.php
+07:34:13:0413 ,begin_scan, Using payload: 1'or'1'='1';#, to all input fields of form w/ action: login.php
+07:34:13:0413 ,begin_scan, Using payload: 1'or'1'='1';#, to all input fields of form w/ action: login.php
+07:34:13:0413 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:13:0413 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:13:0413 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php to check if it is different than before login attempt
+07:34:13:0413 ,begin_scan, Starting Broken Authentication SQLi test function on http://vul.handykartsweb.com/crawler.php
+07:34:13:0413 ,begin_scan, Checking what response code is received from http://vul.handykartsweb.com/crawler.php
+07:34:13:0413 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/crawler.php
+07:34:13:0413 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php
+07:34:13:0413 ,begin_scan, Received response code: 200
+07:34:13:0413 ,begin_scan, Searching http://vul.handykartsweb.com/crawler.php for forms
+07:34:13:0413 ,begin_scan, Found form on http://vul.handykartsweb.com/crawler.php:   post login.php 1
+07:34:13:0413 ,begin_scan, Found input field on http://vul.handykartsweb.com/crawler.php:  email   Email text 1
+07:34:13:0413 ,begin_scan, Found input field on http://vul.handykartsweb.com/crawler.php:  password   Password text 1
+07:34:13:0413 ,begin_scan, Found input field on http://vul.handykartsweb.com/crawler.php:  submit   Log in submit 1
+07:34:13:0413 ,begin_scan, Found input field on http://vul.handykartsweb.com/crawler.php:     Register button 1
+07:34:13:0413 ,begin_scan, Checking if http://vul.handykartsweb.com/crawler.php displays the same page at different intervals
+07:34:13:0413 ,begin_scan, Sending HTTP request number 1 to http://vul.handykartsweb.com/crawler.php
+07:34:13:0413 ,begin_scan, Sending HTTP request number 2 to http://vul.handykartsweb.com/crawler.php
+07:34:13:0413 ,begin_scan, Sending HTTP request number 3 to http://vul.handykartsweb.com/crawler.php
+07:34:14:0414 ,begin_scan, Beginning testing of forms
+07:34:14:0414 ,begin_scan, Beginning testing of form on http://vul.handykartsweb.com/crawler.php:   post login.php
+07:34:14:0414 ,begin_scan, Beginning testing input fields of form on http://vul.handykartsweb.com/crawler.php:   post login.php
+07:34:14:0414 ,begin_scan, Using payload: 1'or'1'='1, to all input fields of form w/ action: login.php
+07:34:14:0414 ,begin_scan, Using payload: 1'or'1'='1, to all input fields of form w/ action: login.php
+07:34:14:0414 ,begin_scan, Using payload: 1'or'1'='1, to all input fields of form w/ action: login.php
+07:34:14:0414 ,begin_scan, Using payload: 1'or'1'='1, to all input fields of form w/ action: login.php
+07:34:14:0414 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:14:0414 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:14:0414 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php to check if it is different than before login attempt
+07:34:14:0414 ,begin_scan, Using payload: 1'or'1'='1';#, to all input fields of form w/ action: login.php
+07:34:14:0414 ,begin_scan, Using payload: 1'or'1'='1';#, to all input fields of form w/ action: login.php
+07:34:14:0414 ,begin_scan, Using payload: 1'or'1'='1';#, to all input fields of form w/ action: login.php
+07:34:14:0414 ,begin_scan, Using payload: 1'or'1'='1';#, to all input fields of form w/ action: login.php
+07:34:14:0414 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:14:0414 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:14:0414 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php to check if it is different than before login attempt
+07:34:14:0414 ,begin_scan, Starting Broken Authentication SQLi test function on http://vul.handykartsweb.com/scanner.php
+07:34:14:0414 ,begin_scan, Checking what response code is received from http://vul.handykartsweb.com/scanner.php
+07:34:14:0414 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/scanner.php
+07:34:14:0414 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php
+07:34:14:0414 ,begin_scan, Received response code: 200
+07:34:14:0414 ,begin_scan, Searching http://vul.handykartsweb.com/scanner.php for forms
+07:34:14:0414 ,begin_scan, Found form on http://vul.handykartsweb.com/scanner.php:   post login.php 1
+07:34:14:0414 ,begin_scan, Found input field on http://vul.handykartsweb.com/scanner.php:  email   Email text 1
+07:34:14:0414 ,begin_scan, Found input field on http://vul.handykartsweb.com/scanner.php:  password   Password text 1
+07:34:14:0414 ,begin_scan, Found input field on http://vul.handykartsweb.com/scanner.php:  submit   Log in submit 1
+07:34:14:0414 ,begin_scan, Found input field on http://vul.handykartsweb.com/scanner.php:     Register button 1
+07:34:14:0414 ,begin_scan, Checking if http://vul.handykartsweb.com/scanner.php displays the same page at different intervals
+07:34:14:0414 ,begin_scan, Sending HTTP request number 1 to http://vul.handykartsweb.com/scanner.php
+07:34:14:0414 ,begin_scan, Sending HTTP request number 2 to http://vul.handykartsweb.com/scanner.php
+07:34:14:0414 ,begin_scan, Sending HTTP request number 3 to http://vul.handykartsweb.com/scanner.php
+07:34:14:0414 ,begin_scan, Beginning testing of forms
+07:34:14:0414 ,begin_scan, Beginning testing of form on http://vul.handykartsweb.com/scanner.php:   post login.php
+07:34:14:0414 ,begin_scan, Beginning testing input fields of form on http://vul.handykartsweb.com/scanner.php:   post login.php
+07:34:14:0414 ,begin_scan, Using payload: 1'or'1'='1, to all input fields of form w/ action: login.php
+07:34:14:0414 ,begin_scan, Using payload: 1'or'1'='1, to all input fields of form w/ action: login.php
+07:34:14:0414 ,begin_scan, Using payload: 1'or'1'='1, to all input fields of form w/ action: login.php
+07:34:14:0414 ,begin_scan, Using payload: 1'or'1'='1, to all input fields of form w/ action: login.php
+07:34:14:0414 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:14:0414 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:14:0414 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php to check if it is different than before login attempt
+07:34:14:0414 ,begin_scan, Using payload: 1'or'1'='1';#, to all input fields of form w/ action: login.php
+07:34:14:0414 ,begin_scan, Using payload: 1'or'1'='1';#, to all input fields of form w/ action: login.php
+07:34:14:0414 ,begin_scan, Using payload: 1'or'1'='1';#, to all input fields of form w/ action: login.php
+07:34:14:0414 ,begin_scan, Using payload: 1'or'1'='1';#, to all input fields of form w/ action: login.php
+07:34:14:0414 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:14:0414 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:14:0414 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php to check if it is different than before login attempt
+07:34:14:0414 ,begin_scan, Starting Broken Authentication SQLi test function on http://vul.handykartsweb.com/history.php
+07:34:14:0414 ,begin_scan, Checking what response code is received from http://vul.handykartsweb.com/history.php
+07:34:14:0414 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/history.php
+07:34:14:0414 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php
+07:34:14:0414 ,begin_scan, Received response code: 200
+07:34:14:0414 ,begin_scan, Searching http://vul.handykartsweb.com/history.php for forms
+07:34:14:0414 ,begin_scan, Found form on http://vul.handykartsweb.com/history.php:   post login.php 1
+07:34:14:0414 ,begin_scan, Found input field on http://vul.handykartsweb.com/history.php:  email   Email text 1
+07:34:14:0414 ,begin_scan, Found input field on http://vul.handykartsweb.com/history.php:  password   Password text 1
+07:34:14:0414 ,begin_scan, Found input field on http://vul.handykartsweb.com/history.php:  submit   Log in submit 1
+07:34:14:0414 ,begin_scan, Found input field on http://vul.handykartsweb.com/history.php:     Register button 1
+07:34:14:0414 ,begin_scan, Checking if http://vul.handykartsweb.com/history.php displays the same page at different intervals
+07:34:14:0414 ,begin_scan, Sending HTTP request number 1 to http://vul.handykartsweb.com/history.php
+07:34:14:0414 ,begin_scan, Sending HTTP request number 2 to http://vul.handykartsweb.com/history.php
+07:34:14:0414 ,begin_scan, Sending HTTP request number 3 to http://vul.handykartsweb.com/history.php
+07:34:14:0414 ,begin_scan, Beginning testing of forms
+07:34:14:0414 ,begin_scan, Beginning testing of form on http://vul.handykartsweb.com/history.php:   post login.php
+07:34:14:0414 ,begin_scan, Beginning testing input fields of form on http://vul.handykartsweb.com/history.php:   post login.php
+07:34:14:0414 ,begin_scan, Using payload: 1'or'1'='1, to all input fields of form w/ action: login.php
+07:34:14:0414 ,begin_scan, Using payload: 1'or'1'='1, to all input fields of form w/ action: login.php
+07:34:14:0414 ,begin_scan, Using payload: 1'or'1'='1, to all input fields of form w/ action: login.php
+07:34:14:0414 ,begin_scan, Using payload: 1'or'1'='1, to all input fields of form w/ action: login.php
+07:34:14:0414 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:14:0414 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:14:0414 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php to check if it is different than before login attempt
+07:34:15:0415 ,begin_scan, Using payload: 1'or'1'='1';#, to all input fields of form w/ action: login.php
+07:34:15:0415 ,begin_scan, Using payload: 1'or'1'='1';#, to all input fields of form w/ action: login.php
+07:34:15:0415 ,begin_scan, Using payload: 1'or'1'='1';#, to all input fields of form w/ action: login.php
+07:34:15:0415 ,begin_scan, Using payload: 1'or'1'='1';#, to all input fields of form w/ action: login.php
+07:34:15:0415 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:15:0415 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:15:0415 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php to check if it is different than before login attempt
+07:34:15:0415 ,begin_scan, Starting Broken Authentication SQLi test function on http://vul.handykartsweb.com/register.php
+07:34:15:0415 ,begin_scan, Checking what response code is received from http://vul.handykartsweb.com/register.php
+07:34:15:0415 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/register.php
+07:34:15:0415 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php
+07:34:15:0415 ,begin_scan, Received response code: 200
+07:34:15:0415 ,begin_scan, Searching http://vul.handykartsweb.com/register.php for forms
+07:34:15:0415 ,begin_scan, Found form on http://vul.handykartsweb.com/register.php:   post login.php 1
+07:34:15:0415 ,begin_scan, Found input field on http://vul.handykartsweb.com/register.php:  email   Email text 1
+07:34:15:0415 ,begin_scan, Found input field on http://vul.handykartsweb.com/register.php:  password   Password text 1
+07:34:15:0415 ,begin_scan, Found input field on http://vul.handykartsweb.com/register.php:  submit   Log in submit 1
+07:34:15:0415 ,begin_scan, Found input field on http://vul.handykartsweb.com/register.php:     Register button 1
+07:34:15:0415 ,begin_scan, Found form on http://vul.handykartsweb.com/register.php:   post register.php 2
+07:34:15:0415 ,begin_scan, Found input field on http://vul.handykartsweb.com/register.php:  regusername   Username text 2
+07:34:15:0415 ,begin_scan, Found input field on http://vul.handykartsweb.com/register.php:  regpassword   Password text 2
+07:34:15:0415 ,begin_scan, Found input field on http://vul.handykartsweb.com/register.php:  regpassword2   Confirm Password text 2
+07:34:15:0415 ,begin_scan, Found input field on http://vul.handykartsweb.com/register.php:  email   Email text 2
+07:34:15:0415 ,begin_scan, Found input field on http://vul.handykartsweb.com/register.php:  submit   Register submit 2
+07:34:15:0415 ,begin_scan, Found input field on http://vul.handykartsweb.com/register.php:  reset   Reset reset 2
+07:34:15:0415 ,begin_scan, Checking if http://vul.handykartsweb.com/register.php displays the same page at different intervals
+07:34:15:0415 ,begin_scan, Sending HTTP request number 1 to http://vul.handykartsweb.com/register.php
+07:34:15:0415 ,begin_scan, Sending HTTP request number 2 to http://vul.handykartsweb.com/register.php
+07:34:15:0415 ,begin_scan, Sending HTTP request number 3 to http://vul.handykartsweb.com/register.php
+07:34:15:0415 ,begin_scan, Beginning testing of forms
+07:34:15:0415 ,begin_scan, Beginning testing of form on http://vul.handykartsweb.com/register.php:   post login.php
+07:34:15:0415 ,begin_scan, Beginning testing input fields of form on http://vul.handykartsweb.com/register.php:   post login.php
+07:34:15:0415 ,begin_scan, Using payload: 1'or'1'='1, to all input fields of form w/ action: login.php
+07:34:15:0415 ,begin_scan, Using payload: 1'or'1'='1, to all input fields of form w/ action: login.php
+07:34:15:0415 ,begin_scan, Using payload: 1'or'1'='1, to all input fields of form w/ action: login.php
+07:34:15:0415 ,begin_scan, Using payload: 1'or'1'='1, to all input fields of form w/ action: login.php
+07:34:15:0415 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:15:0415 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:15:0415 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php to check if it is different than before login attempt
+07:34:15:0415 ,begin_scan, Using payload: 1'or'1'='1';#, to all input fields of form w/ action: login.php
+07:34:15:0415 ,begin_scan, Using payload: 1'or'1'='1';#, to all input fields of form w/ action: login.php
+07:34:15:0415 ,begin_scan, Using payload: 1'or'1'='1';#, to all input fields of form w/ action: login.php
+07:34:15:0415 ,begin_scan, Using payload: 1'or'1'='1';#, to all input fields of form w/ action: login.php
+07:34:15:0415 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:15:0415 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:15:0415 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php to check if it is different than before login attempt
+07:34:15:0415 ,begin_scan, Beginning testing of form on http://vul.handykartsweb.com/register.php:   post register.php
+07:34:15:0415 ,begin_scan, Beginning testing input fields of form on http://vul.handykartsweb.com/register.php:   post register.php
+07:34:15:0415 ,begin_scan, Using payload: 1'or'1'='1, to all input fields of form w/ action: register.php
+07:34:15:0415 ,begin_scan, Using payload: 1'or'1'='1, to all input fields of form w/ action: register.php
+07:34:15:0415 ,begin_scan, Using payload: 1'or'1'='1, to all input fields of form w/ action: register.php
+07:34:15:0415 ,begin_scan, Using payload: 1'or'1'='1, to all input fields of form w/ action: register.php
+07:34:15:0415 ,begin_scan, Using payload: 1'or'1'='1, to all input fields of form w/ action: register.php
+07:34:15:0415 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/register.php
+07:34:15:0415 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php
+07:34:15:0415 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php to check if it is different than before login attempt
+07:34:15:0415 ,begin_scan, Using payload: 1'or'1'='1';#, to all input fields of form w/ action: register.php
+07:34:15:0415 ,begin_scan, Using payload: 1'or'1'='1';#, to all input fields of form w/ action: register.php
+07:34:15:0415 ,begin_scan, Using payload: 1'or'1'='1';#, to all input fields of form w/ action: register.php
+07:34:15:0415 ,begin_scan, Using payload: 1'or'1'='1';#, to all input fields of form w/ action: register.php
+07:34:15:0415 ,begin_scan, Using payload: 1'or'1'='1';#, to all input fields of form w/ action: register.php
+07:34:15:0415 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/register.php
+07:34:15:0415 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php
+07:34:15:0415 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php to check if it is different than before login attempt
+07:34:15:0415 ,begin_scan, Finished testing each of the URLs for Broken Authentication using SQL Injection for test: 19
+07:34:15:0415 ,begin_scan, Beginning Stored XSS testing on each of the URLs
+07:34:15:0415 ,begin_scan, Starting Stored XXS test function on http://vul.handykartsweb.com/
+07:34:15:0415 ,begin_scan, Checking what response code is received from http://vul.handykartsweb.com/
+07:34:15:0415 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/
+07:34:15:0415 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/
+07:34:15:0415 ,begin_scan, Received response code: 200
+07:34:16:0416 ,begin_scan, Check if http://vul.handykartsweb.com/ contains parameters
+07:34:16:0416 ,begin_scan, Searching http://vul.handykartsweb.com/ for forms
+07:34:16:0416 ,begin_scan, Found form on http://vul.handykartsweb.com/:   post login.php 1
+07:34:16:0416 ,begin_scan, Found input field on http://vul.handykartsweb.com/:  email   Email text 1
+07:34:16:0416 ,begin_scan, Found input field on http://vul.handykartsweb.com/:  password   Password text 1
+07:34:16:0416 ,begin_scan, Found input field on http://vul.handykartsweb.com/:  submit   Log in submit 1
+07:34:16:0416 ,begin_scan, Found input field on http://vul.handykartsweb.com/:     Register button 1
+07:34:16:0416 ,begin_scan, Beginning testing of forms
+07:34:16:0416 ,begin_scan, Beginning testing of form on http://vul.handykartsweb.com/:   post login.php
+07:34:16:0416 ,begin_scan, Beginning testing input fields of form on http://vul.handykartsweb.com/:   post login.php
+07:34:16:0416 ,begin_scan, Submitting payload: <1555918456.07> to input field: email
+07:34:16:0416 ,begin_scan, Checking all URLs found for <1555918456.07>
+07:34:16:0416 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/ and looking for <1555918456.07>
+07:34:16:0416 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php and looking for <1555918456.07>
+07:34:16:0416 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php and looking for <1555918456.07>
+07:34:16:0416 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php and looking for <1555918456.07>
+07:34:16:0416 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php and looking for <1555918456.07>
+07:34:16:0416 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php and looking for <1555918456.07>
+07:34:16:0416 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php and looking for <1555918456.07>
+07:34:16:0416 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php and looking for <1555918456.07>
+07:34:16:0416 ,begin_scan, Submitting payload: <1555918456.0697> to input field: password
+07:34:16:0416 ,begin_scan, Checking all URLs found for <1555918456.0697>
+07:34:16:0416 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/ and looking for <1555918456.0697>
+07:34:16:0416 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php and looking for <1555918456.0697>
+07:34:16:0416 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php and looking for <1555918456.0697>
+07:34:16:0416 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php and looking for <1555918456.0697>
+07:34:17:0417 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php and looking for <1555918456.0697>
+07:34:17:0417 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php and looking for <1555918456.0697>
+07:34:17:0417 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php and looking for <1555918456.0697>
+07:34:17:0417 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php and looking for <1555918456.0697>
+07:34:17:0417 ,begin_scan, Submitting payload: <1555918456.0697> to input field: submit
+07:34:17:0417 ,begin_scan, Checking all URLs found for <1555918456.0697>
+07:34:17:0417 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/ and looking for <1555918456.0697>
+07:34:17:0417 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php and looking for <1555918456.0697>
+07:34:17:0417 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php and looking for <1555918456.0697>
+07:34:17:0417 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php and looking for <1555918456.0697>
+07:34:17:0417 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php and looking for <1555918456.0697>
+07:34:17:0417 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php and looking for <1555918456.0697>
+07:34:17:0417 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php and looking for <1555918456.0697>
+07:34:17:0417 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php and looking for <1555918456.0697>
+07:34:17:0417 ,begin_scan, Submitting payload: <1555918456.0697> to input field: 
+07:34:17:0417 ,begin_scan, Checking all URLs found for <1555918456.0697>
+07:34:17:0417 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/ and looking for <1555918456.0697>
+07:34:17:0417 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php and looking for <1555918456.0697>
+07:34:18:0418 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php and looking for <1555918456.0697>
+07:34:18:0418 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php and looking for <1555918456.0697>
+07:34:18:0418 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php and looking for <1555918456.0697>
+07:34:18:0418 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php and looking for <1555918456.0697>
+07:34:18:0418 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php and looking for <1555918456.0697>
+07:34:18:0418 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php and looking for <1555918456.0697>
+07:34:18:0418 ,begin_scan, Starting Stored XXS test function on http://vul.handykartsweb.com/index.php
+07:34:18:0418 ,begin_scan, Checking what response code is received from http://vul.handykartsweb.com/index.php
+07:34:18:0418 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/index.php
+07:34:18:0418 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php
+07:34:18:0418 ,begin_scan, Received response code: 200
+07:34:18:0418 ,begin_scan, Check if http://vul.handykartsweb.com/index.php contains parameters
+07:34:18:0418 ,begin_scan, Searching http://vul.handykartsweb.com/index.php for forms
+07:34:18:0418 ,begin_scan, Found form on http://vul.handykartsweb.com/index.php:   post login.php 1
+07:34:18:0418 ,begin_scan, Found input field on http://vul.handykartsweb.com/index.php:  email   Email text 1
+07:34:18:0418 ,begin_scan, Found input field on http://vul.handykartsweb.com/index.php:  password   Password text 1
+07:34:18:0418 ,begin_scan, Found input field on http://vul.handykartsweb.com/index.php:  submit   Log in submit 1
+07:34:18:0418 ,begin_scan, Found input field on http://vul.handykartsweb.com/index.php:     Register button 1
+07:34:18:0418 ,begin_scan, Beginning testing of forms
+07:34:18:0418 ,begin_scan, Beginning testing of form on http://vul.handykartsweb.com/index.php:   post login.php
+07:34:18:0418 ,begin_scan, Beginning testing input fields of form on http://vul.handykartsweb.com/index.php:   post login.php
+07:34:18:0418 ,begin_scan, Submitting payload: <1555918458.4072> to input field: email
+07:34:18:0418 ,begin_scan, Checking all URLs found for <1555918458.4072>
+07:34:18:0418 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/ and looking for <1555918458.4072>
+07:34:18:0418 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php and looking for <1555918458.4072>
+07:34:18:0418 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php and looking for <1555918458.4072>
+07:34:18:0418 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php and looking for <1555918458.4072>
+07:34:18:0418 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php and looking for <1555918458.4072>
+07:34:18:0418 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php and looking for <1555918458.4072>
+07:34:18:0418 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php and looking for <1555918458.4072>
+07:34:18:0418 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php and looking for <1555918458.4072>
+07:34:18:0418 ,begin_scan, Submitting payload: <1555918458.4069> to input field: password
+07:34:18:0418 ,begin_scan, Checking all URLs found for <1555918458.4069>
+07:34:18:0418 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/ and looking for <1555918458.4069>
+07:34:18:0418 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php and looking for <1555918458.4069>
+07:34:18:0418 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php and looking for <1555918458.4069>
+07:34:18:0418 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php and looking for <1555918458.4069>
+07:34:19:0419 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php and looking for <1555918458.4069>
+07:34:19:0419 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php and looking for <1555918458.4069>
+07:34:19:0419 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php and looking for <1555918458.4069>
+07:34:19:0419 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php and looking for <1555918458.4069>
+07:34:19:0419 ,begin_scan, Submitting payload: <1555918458.4069> to input field: submit
+07:34:19:0419 ,begin_scan, Checking all URLs found for <1555918458.4069>
+07:34:19:0419 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/ and looking for <1555918458.4069>
+07:34:19:0419 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php and looking for <1555918458.4069>
+07:34:19:0419 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php and looking for <1555918458.4069>
+07:34:19:0419 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php and looking for <1555918458.4069>
+07:34:19:0419 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php and looking for <1555918458.4069>
+07:34:19:0419 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php and looking for <1555918458.4069>
+07:34:19:0419 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php and looking for <1555918458.4069>
+07:34:19:0419 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php and looking for <1555918458.4069>
+07:34:19:0419 ,begin_scan, Submitting payload: <1555918458.4069> to input field: 
+07:34:19:0419 ,begin_scan, Checking all URLs found for <1555918458.4069>
+07:34:19:0419 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/ and looking for <1555918458.4069>
+07:34:19:0419 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php and looking for <1555918458.4069>
+07:34:19:0419 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php and looking for <1555918458.4069>
+07:34:19:0419 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php and looking for <1555918458.4069>
+07:34:19:0419 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php and looking for <1555918458.4069>
+07:34:20:0420 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php and looking for <1555918458.4069>
+07:34:20:0420 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php and looking for <1555918458.4069>
+07:34:20:0420 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php and looking for <1555918458.4069>
+07:34:20:0420 ,begin_scan, Starting Stored XXS test function on http://vul.handykartsweb.com/login.php
+07:34:20:0420 ,begin_scan, Checking what response code is received from http://vul.handykartsweb.com/login.php
+07:34:20:0420 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/login.php
+07:34:20:0420 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php
+07:34:20:0420 ,begin_scan, Received response code: 200
+07:34:20:0420 ,begin_scan, Check if http://vul.handykartsweb.com/login.php contains parameters
+07:34:20:0420 ,begin_scan, Searching http://vul.handykartsweb.com/login.php for forms
+07:34:20:0420 ,begin_scan, Found form on http://vul.handykartsweb.com/login.php:   post login.php 1
+07:34:20:0420 ,begin_scan, Found input field on http://vul.handykartsweb.com/login.php:  email   Email text 1
+07:34:20:0420 ,begin_scan, Found input field on http://vul.handykartsweb.com/login.php:  password   Password text 1
+07:34:20:0420 ,begin_scan, Found input field on http://vul.handykartsweb.com/login.php:  submit   Log in submit 1
+07:34:20:0420 ,begin_scan, Found input field on http://vul.handykartsweb.com/login.php:     Register button 1
+07:34:20:0420 ,begin_scan, Beginning testing of forms
+07:34:20:0420 ,begin_scan, Beginning testing of form on http://vul.handykartsweb.com/login.php:   post login.php
+07:34:20:0420 ,begin_scan, Beginning testing input fields of form on http://vul.handykartsweb.com/login.php:   post login.php
+07:34:20:0420 ,begin_scan, Submitting payload: <1555918460.3114> to input field: email
+07:34:20:0420 ,begin_scan, Checking all URLs found for <1555918460.3114>
+07:34:20:0420 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/ and looking for <1555918460.3114>
+07:34:20:0420 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php and looking for <1555918460.3114>
+07:34:20:0420 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php and looking for <1555918460.3114>
+07:34:20:0420 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php and looking for <1555918460.3114>
+07:34:20:0420 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php and looking for <1555918460.3114>
+07:34:20:0420 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php and looking for <1555918460.3114>
+07:34:20:0420 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php and looking for <1555918460.3114>
+07:34:20:0420 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php and looking for <1555918460.3114>
+07:34:20:0420 ,begin_scan, Submitting payload: <1555918460.3111> to input field: password
+07:34:20:0420 ,begin_scan, Checking all URLs found for <1555918460.3111>
+07:34:20:0420 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/ and looking for <1555918460.3111>
+07:34:20:0420 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php and looking for <1555918460.3111>
+07:34:21:0421 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php and looking for <1555918460.3111>
+07:34:21:0421 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php and looking for <1555918460.3111>
+07:34:21:0421 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php and looking for <1555918460.3111>
+07:34:21:0421 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php and looking for <1555918460.3111>
+07:34:21:0421 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php and looking for <1555918460.3111>
+07:34:21:0421 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php and looking for <1555918460.3111>
+07:34:21:0421 ,begin_scan, Submitting payload: <1555918460.3111> to input field: submit
+07:34:21:0421 ,begin_scan, Checking all URLs found for <1555918460.3111>
+07:34:21:0421 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/ and looking for <1555918460.3111>
+07:34:21:0421 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php and looking for <1555918460.3111>
+07:34:21:0421 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php and looking for <1555918460.3111>
+07:34:21:0421 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php and looking for <1555918460.3111>
+07:34:21:0421 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php and looking for <1555918460.3111>
+07:34:21:0421 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php and looking for <1555918460.3111>
+07:34:21:0421 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php and looking for <1555918460.3111>
+07:34:21:0421 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php and looking for <1555918460.3111>
+07:34:21:0421 ,begin_scan, Submitting payload: <1555918460.3111> to input field: 
+07:34:21:0421 ,begin_scan, Checking all URLs found for <1555918460.3111>
+07:34:21:0421 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/ and looking for <1555918460.3111>
+07:34:21:0421 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php and looking for <1555918460.3111>
+07:34:21:0421 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php and looking for <1555918460.3111>
+07:34:21:0421 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php and looking for <1555918460.3111>
+07:34:22:0422 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php and looking for <1555918460.3111>
+07:34:22:0422 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php and looking for <1555918460.3111>
+07:34:22:0422 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php and looking for <1555918460.3111>
+07:34:22:0422 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php and looking for <1555918460.3111>
+07:34:22:0422 ,begin_scan, Starting Stored XXS test function on http://vul.handykartsweb.com/about.php
+07:34:22:0422 ,begin_scan, Checking what response code is received from http://vul.handykartsweb.com/about.php
+07:34:22:0422 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/about.php
+07:34:22:0422 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php
+07:34:22:0422 ,begin_scan, Received response code: 200
+07:34:22:0422 ,begin_scan, Check if http://vul.handykartsweb.com/about.php contains parameters
+07:34:22:0422 ,begin_scan, Searching http://vul.handykartsweb.com/about.php for forms
+07:34:22:0422 ,begin_scan, Found form on http://vul.handykartsweb.com/about.php:   post login.php 1
+07:34:22:0422 ,begin_scan, Found input field on http://vul.handykartsweb.com/about.php:  email   Email text 1
+07:34:22:0422 ,begin_scan, Found input field on http://vul.handykartsweb.com/about.php:  password   Password text 1
+07:34:22:0422 ,begin_scan, Found input field on http://vul.handykartsweb.com/about.php:  submit   Log in submit 1
+07:34:22:0422 ,begin_scan, Found input field on http://vul.handykartsweb.com/about.php:     Register button 1
+07:34:22:0422 ,begin_scan, Beginning testing of forms
+07:34:22:0422 ,begin_scan, Beginning testing of form on http://vul.handykartsweb.com/about.php:   post login.php
+07:34:22:0422 ,begin_scan, Beginning testing input fields of form on http://vul.handykartsweb.com/about.php:   post login.php
+07:34:22:0422 ,begin_scan, Submitting payload: <1555918462.3572> to input field: email
+07:34:22:0422 ,begin_scan, Checking all URLs found for <1555918462.3572>
+07:34:22:0422 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/ and looking for <1555918462.3572>
+07:34:22:0422 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php and looking for <1555918462.3572>
+07:34:22:0422 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php and looking for <1555918462.3572>
+07:34:22:0422 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php and looking for <1555918462.3572>
+07:34:22:0422 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php and looking for <1555918462.3572>
+07:34:22:0422 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php and looking for <1555918462.3572>
+07:34:22:0422 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php and looking for <1555918462.3572>
+07:34:22:0422 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php and looking for <1555918462.3572>
+07:34:22:0422 ,begin_scan, Submitting payload: <1555918462.357> to input field: password
+07:34:22:0422 ,begin_scan, Checking all URLs found for <1555918462.357>
+07:34:22:0422 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/ and looking for <1555918462.357>
+07:34:22:0422 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php and looking for <1555918462.357>
+07:34:22:0422 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php and looking for <1555918462.357>
+07:34:23:0423 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php and looking for <1555918462.357>
+07:34:23:0423 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php and looking for <1555918462.357>
+07:34:23:0423 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php and looking for <1555918462.357>
+07:34:23:0423 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php and looking for <1555918462.357>
+07:34:23:0423 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php and looking for <1555918462.357>
+07:34:23:0423 ,begin_scan, Submitting payload: <1555918462.357> to input field: submit
+07:34:23:0423 ,begin_scan, Checking all URLs found for <1555918462.357>
+07:34:23:0423 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/ and looking for <1555918462.357>
+07:34:23:0423 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php and looking for <1555918462.357>
+07:34:23:0423 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php and looking for <1555918462.357>
+07:34:23:0423 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php and looking for <1555918462.357>
+07:34:23:0423 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php and looking for <1555918462.357>
+07:34:23:0423 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php and looking for <1555918462.357>
+07:34:23:0423 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php and looking for <1555918462.357>
+07:34:23:0423 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php and looking for <1555918462.357>
+07:34:23:0423 ,begin_scan, Submitting payload: <1555918462.357> to input field: 
+07:34:23:0423 ,begin_scan, Checking all URLs found for <1555918462.357>
+07:34:23:0423 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/ and looking for <1555918462.357>
+07:34:23:0423 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php and looking for <1555918462.357>
+07:34:23:0423 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php and looking for <1555918462.357>
+07:34:24:0424 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php and looking for <1555918462.357>
+07:34:24:0424 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php and looking for <1555918462.357>
+07:34:24:0424 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php and looking for <1555918462.357>
+07:34:24:0424 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php and looking for <1555918462.357>
+07:34:24:0424 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php and looking for <1555918462.357>
+07:34:24:0424 ,begin_scan, Starting Stored XXS test function on http://vul.handykartsweb.com/crawler.php
+07:34:24:0424 ,begin_scan, Checking what response code is received from http://vul.handykartsweb.com/crawler.php
+07:34:24:0424 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/crawler.php
+07:34:24:0424 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php
+07:34:24:0424 ,begin_scan, Received response code: 200
+07:34:24:0424 ,begin_scan, Check if http://vul.handykartsweb.com/crawler.php contains parameters
+07:34:24:0424 ,begin_scan, Searching http://vul.handykartsweb.com/crawler.php for forms
+07:34:24:0424 ,begin_scan, Found form on http://vul.handykartsweb.com/crawler.php:   post login.php 1
+07:34:24:0424 ,begin_scan, Found input field on http://vul.handykartsweb.com/crawler.php:  email   Email text 1
+07:34:24:0424 ,begin_scan, Found input field on http://vul.handykartsweb.com/crawler.php:  password   Password text 1
+07:34:24:0424 ,begin_scan, Found input field on http://vul.handykartsweb.com/crawler.php:  submit   Log in submit 1
+07:34:24:0424 ,begin_scan, Found input field on http://vul.handykartsweb.com/crawler.php:     Register button 1
+07:34:24:0424 ,begin_scan, Beginning testing of forms
+07:34:24:0424 ,begin_scan, Beginning testing of form on http://vul.handykartsweb.com/crawler.php:   post login.php
+07:34:24:0424 ,begin_scan, Beginning testing input fields of form on http://vul.handykartsweb.com/crawler.php:   post login.php
+07:34:24:0424 ,begin_scan, Submitting payload: <1555918464.3799> to input field: email
+07:34:24:0424 ,begin_scan, Checking all URLs found for <1555918464.3799>
+07:34:24:0424 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/ and looking for <1555918464.3799>
+07:34:24:0424 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php and looking for <1555918464.3799>
+07:34:24:0424 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php and looking for <1555918464.3799>
+07:34:24:0424 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php and looking for <1555918464.3799>
+07:34:24:0424 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php and looking for <1555918464.3799>
+07:34:24:0424 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php and looking for <1555918464.3799>
+07:34:24:0424 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php and looking for <1555918464.3799>
+07:34:24:0424 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php and looking for <1555918464.3799>
+07:34:24:0424 ,begin_scan, Submitting payload: <1555918464.3796> to input field: password
+07:34:24:0424 ,begin_scan, Checking all URLs found for <1555918464.3796>
+07:34:24:0424 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/ and looking for <1555918464.3796>
+07:34:24:0424 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php and looking for <1555918464.3796>
+07:34:24:0424 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php and looking for <1555918464.3796>
+07:34:24:0424 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php and looking for <1555918464.3796>
+07:34:25:0425 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php and looking for <1555918464.3796>
+07:34:25:0425 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php and looking for <1555918464.3796>
+07:34:25:0425 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php and looking for <1555918464.3796>
+07:34:25:0425 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php and looking for <1555918464.3796>
+07:34:25:0425 ,begin_scan, Submitting payload: <1555918464.3796> to input field: submit
+07:34:25:0425 ,begin_scan, Checking all URLs found for <1555918464.3796>
+07:34:25:0425 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/ and looking for <1555918464.3796>
+07:34:25:0425 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php and looking for <1555918464.3796>
+07:34:25:0425 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php and looking for <1555918464.3796>
+07:34:25:0425 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php and looking for <1555918464.3796>
+07:34:25:0425 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php and looking for <1555918464.3796>
+07:34:25:0425 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php and looking for <1555918464.3796>
+07:34:25:0425 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php and looking for <1555918464.3796>
+07:34:25:0425 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php and looking for <1555918464.3796>
+07:34:25:0425 ,begin_scan, Submitting payload: <1555918464.3796> to input field: 
+07:34:25:0425 ,begin_scan, Checking all URLs found for <1555918464.3796>
+07:34:25:0425 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/ and looking for <1555918464.3796>
+07:34:25:0425 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php and looking for <1555918464.3796>
+07:34:25:0425 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php and looking for <1555918464.3796>
+07:34:25:0425 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php and looking for <1555918464.3796>
+07:34:25:0425 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php and looking for <1555918464.3796>
+07:34:25:0425 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php and looking for <1555918464.3796>
+07:34:26:0426 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php and looking for <1555918464.3796>
+07:34:26:0426 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php and looking for <1555918464.3796>
+07:34:26:0426 ,begin_scan, Starting Stored XXS test function on http://vul.handykartsweb.com/scanner.php
+07:34:26:0426 ,begin_scan, Checking what response code is received from http://vul.handykartsweb.com/scanner.php
+07:34:26:0426 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/scanner.php
+07:34:26:0426 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php
+07:34:26:0426 ,begin_scan, Received response code: 200
+07:34:26:0426 ,begin_scan, Check if http://vul.handykartsweb.com/scanner.php contains parameters
+07:34:26:0426 ,begin_scan, Searching http://vul.handykartsweb.com/scanner.php for forms
+07:34:26:0426 ,begin_scan, Found form on http://vul.handykartsweb.com/scanner.php:   post login.php 1
+07:34:26:0426 ,begin_scan, Found input field on http://vul.handykartsweb.com/scanner.php:  email   Email text 1
+07:34:26:0426 ,begin_scan, Found input field on http://vul.handykartsweb.com/scanner.php:  password   Password text 1
+07:34:26:0426 ,begin_scan, Found input field on http://vul.handykartsweb.com/scanner.php:  submit   Log in submit 1
+07:34:26:0426 ,begin_scan, Found input field on http://vul.handykartsweb.com/scanner.php:     Register button 1
+07:34:26:0426 ,begin_scan, Beginning testing of forms
+07:34:26:0426 ,begin_scan, Beginning testing of form on http://vul.handykartsweb.com/scanner.php:   post login.php
+07:34:26:0426 ,begin_scan, Beginning testing input fields of form on http://vul.handykartsweb.com/scanner.php:   post login.php
+07:34:26:0426 ,begin_scan, Submitting payload: <1555918466.2813> to input field: email
+07:34:26:0426 ,begin_scan, Checking all URLs found for <1555918466.2813>
+07:34:26:0426 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/ and looking for <1555918466.2813>
+07:34:26:0426 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php and looking for <1555918466.2813>
+07:34:26:0426 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php and looking for <1555918466.2813>
+07:34:26:0426 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php and looking for <1555918466.2813>
+07:34:26:0426 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php and looking for <1555918466.2813>
+07:34:26:0426 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php and looking for <1555918466.2813>
+07:34:26:0426 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php and looking for <1555918466.2813>
+07:34:26:0426 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php and looking for <1555918466.2813>
+07:34:26:0426 ,begin_scan, Submitting payload: <1555918466.281> to input field: password
+07:34:26:0426 ,begin_scan, Checking all URLs found for <1555918466.281>
+07:34:26:0426 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/ and looking for <1555918466.281>
+07:34:26:0426 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php and looking for <1555918466.281>
+07:34:26:0426 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php and looking for <1555918466.281>
+07:34:26:0426 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php and looking for <1555918466.281>
+07:34:26:0426 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php and looking for <1555918466.281>
+07:34:26:0426 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php and looking for <1555918466.281>
+07:34:26:0426 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php and looking for <1555918466.281>
+07:34:27:0427 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php and looking for <1555918466.281>
+07:34:27:0427 ,begin_scan, Submitting payload: <1555918466.281> to input field: submit
+07:34:27:0427 ,begin_scan, Checking all URLs found for <1555918466.281>
+07:34:27:0427 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/ and looking for <1555918466.281>
+07:34:27:0427 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php and looking for <1555918466.281>
+07:34:27:0427 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php and looking for <1555918466.281>
+07:34:27:0427 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php and looking for <1555918466.281>
+07:34:27:0427 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php and looking for <1555918466.281>
+07:34:27:0427 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php and looking for <1555918466.281>
+07:34:27:0427 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php and looking for <1555918466.281>
+07:34:27:0427 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php and looking for <1555918466.281>
+07:34:27:0427 ,begin_scan, Submitting payload: <1555918466.281> to input field: 
+07:34:27:0427 ,begin_scan, Checking all URLs found for <1555918466.281>
+07:34:27:0427 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/ and looking for <1555918466.281>
+07:34:27:0427 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php and looking for <1555918466.281>
+07:34:27:0427 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php and looking for <1555918466.281>
+07:34:27:0427 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php and looking for <1555918466.281>
+07:34:27:0427 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php and looking for <1555918466.281>
+07:34:27:0427 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php and looking for <1555918466.281>
+07:34:27:0427 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php and looking for <1555918466.281>
+07:34:27:0427 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php and looking for <1555918466.281>
+07:34:27:0427 ,begin_scan, Starting Stored XXS test function on http://vul.handykartsweb.com/history.php
+07:34:27:0427 ,begin_scan, Checking what response code is received from http://vul.handykartsweb.com/history.php
+07:34:27:0427 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/history.php
+07:34:27:0427 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php
+07:34:28:0428 ,begin_scan, Received response code: 200
+07:34:28:0428 ,begin_scan, Check if http://vul.handykartsweb.com/history.php contains parameters
+07:34:28:0428 ,begin_scan, Searching http://vul.handykartsweb.com/history.php for forms
+07:34:28:0428 ,begin_scan, Found form on http://vul.handykartsweb.com/history.php:   post login.php 1
+07:34:28:0428 ,begin_scan, Found input field on http://vul.handykartsweb.com/history.php:  email   Email text 1
+07:34:28:0428 ,begin_scan, Found input field on http://vul.handykartsweb.com/history.php:  password   Password text 1
+07:34:28:0428 ,begin_scan, Found input field on http://vul.handykartsweb.com/history.php:  submit   Log in submit 1
+07:34:28:0428 ,begin_scan, Found input field on http://vul.handykartsweb.com/history.php:     Register button 1
+07:34:28:0428 ,begin_scan, Beginning testing of forms
+07:34:28:0428 ,begin_scan, Beginning testing of form on http://vul.handykartsweb.com/history.php:   post login.php
+07:34:28:0428 ,begin_scan, Beginning testing input fields of form on http://vul.handykartsweb.com/history.php:   post login.php
+07:34:28:0428 ,begin_scan, Submitting payload: <1555918468.1973> to input field: email
+07:34:28:0428 ,begin_scan, Checking all URLs found for <1555918468.1973>
+07:34:28:0428 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/ and looking for <1555918468.1973>
+07:34:28:0428 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php and looking for <1555918468.1973>
+07:34:28:0428 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php and looking for <1555918468.1973>
+07:34:28:0428 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php and looking for <1555918468.1973>
+07:34:28:0428 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php and looking for <1555918468.1973>
+07:34:28:0428 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php and looking for <1555918468.1973>
+07:34:28:0428 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php and looking for <1555918468.1973>
+07:34:28:0428 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php and looking for <1555918468.1973>
+07:34:28:0428 ,begin_scan, Submitting payload: <1555918468.1971> to input field: password
+07:34:28:0428 ,begin_scan, Checking all URLs found for <1555918468.1971>
+07:34:28:0428 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/ and looking for <1555918468.1971>
+07:34:28:0428 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php and looking for <1555918468.1971>
+07:34:28:0428 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php and looking for <1555918468.1971>
+07:34:28:0428 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php and looking for <1555918468.1971>
+07:34:28:0428 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php and looking for <1555918468.1971>
+07:34:28:0428 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php and looking for <1555918468.1971>
+07:34:28:0428 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php and looking for <1555918468.1971>
+07:34:29:0429 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php and looking for <1555918468.1971>
+07:34:29:0429 ,begin_scan, Submitting payload: <1555918468.1971> to input field: submit
+07:34:29:0429 ,begin_scan, Checking all URLs found for <1555918468.1971>
+07:34:29:0429 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/ and looking for <1555918468.1971>
+07:34:29:0429 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php and looking for <1555918468.1971>
+07:34:29:0429 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php and looking for <1555918468.1971>
+07:34:29:0429 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php and looking for <1555918468.1971>
+07:34:29:0429 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php and looking for <1555918468.1971>
+07:34:29:0429 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php and looking for <1555918468.1971>
+07:34:29:0429 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php and looking for <1555918468.1971>
+07:34:29:0429 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php and looking for <1555918468.1971>
+07:34:29:0429 ,begin_scan, Submitting payload: <1555918468.1971> to input field: 
+07:34:29:0429 ,begin_scan, Checking all URLs found for <1555918468.1971>
+07:34:29:0429 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/ and looking for <1555918468.1971>
+07:34:29:0429 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php and looking for <1555918468.1971>
+07:34:29:0429 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php and looking for <1555918468.1971>
+07:34:29:0429 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php and looking for <1555918468.1971>
+07:34:29:0429 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php and looking for <1555918468.1971>
+07:34:29:0429 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php and looking for <1555918468.1971>
+07:34:29:0429 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php and looking for <1555918468.1971>
+07:34:29:0429 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php and looking for <1555918468.1971>
+07:34:29:0429 ,begin_scan, Starting Stored XXS test function on http://vul.handykartsweb.com/register.php
+07:34:29:0429 ,begin_scan, Checking what response code is received from http://vul.handykartsweb.com/register.php
+07:34:29:0429 ,begin_scan, URL to be requested is: http://vul.handykartsweb.com/register.php
+07:34:29:0429 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php
+07:34:30:0430 ,begin_scan, Received response code: 200
+07:34:30:0430 ,begin_scan, Check if http://vul.handykartsweb.com/register.php contains parameters
+07:34:30:0430 ,begin_scan, Searching http://vul.handykartsweb.com/register.php for forms
+07:34:30:0430 ,begin_scan, Found form on http://vul.handykartsweb.com/register.php:   post login.php 1
+07:34:30:0430 ,begin_scan, Found input field on http://vul.handykartsweb.com/register.php:  email   Email text 1
+07:34:30:0430 ,begin_scan, Found input field on http://vul.handykartsweb.com/register.php:  password   Password text 1
+07:34:30:0430 ,begin_scan, Found input field on http://vul.handykartsweb.com/register.php:  submit   Log in submit 1
+07:34:30:0430 ,begin_scan, Found input field on http://vul.handykartsweb.com/register.php:     Register button 1
+07:34:30:0430 ,begin_scan, Found form on http://vul.handykartsweb.com/register.php:   post register.php 2
+07:34:30:0430 ,begin_scan, Found input field on http://vul.handykartsweb.com/register.php:  regusername   Username text 2
+07:34:30:0430 ,begin_scan, Found input field on http://vul.handykartsweb.com/register.php:  regpassword   Password text 2
+07:34:30:0430 ,begin_scan, Found input field on http://vul.handykartsweb.com/register.php:  regpassword2   Confirm Password text 2
+07:34:30:0430 ,begin_scan, Found input field on http://vul.handykartsweb.com/register.php:  email   Email text 2
+07:34:30:0430 ,begin_scan, Found input field on http://vul.handykartsweb.com/register.php:  submit   Register submit 2
+07:34:30:0430 ,begin_scan, Found input field on http://vul.handykartsweb.com/register.php:  reset   Reset reset 2
+07:34:30:0430 ,begin_scan, Beginning testing of forms
+07:34:30:0430 ,begin_scan, Beginning testing of form on http://vul.handykartsweb.com/register.php:   post login.php
+07:34:30:0430 ,begin_scan, Beginning testing input fields of form on http://vul.handykartsweb.com/register.php:   post login.php
+07:34:30:0430 ,begin_scan, Submitting payload: <1555918470.2545> to input field: email
+07:34:30:0430 ,begin_scan, Checking all URLs found for <1555918470.2545>
+07:34:30:0430 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/ and looking for <1555918470.2545>
+07:34:30:0430 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php and looking for <1555918470.2545>
+07:34:30:0430 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php and looking for <1555918470.2545>
+07:34:30:0430 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php and looking for <1555918470.2545>
+07:34:30:0430 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php and looking for <1555918470.2545>
+07:34:30:0430 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php and looking for <1555918470.2545>
+07:34:30:0430 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php and looking for <1555918470.2545>
+07:34:30:0430 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php and looking for <1555918470.2545>
+07:34:30:0430 ,begin_scan, Submitting payload: <1555918470.254> to input field: password
+07:34:30:0430 ,begin_scan, Checking all URLs found for <1555918470.254>
+07:34:30:0430 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/ and looking for <1555918470.254>
+07:34:30:0430 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php and looking for <1555918470.254>
+07:34:30:0430 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php and looking for <1555918470.254>
+07:34:30:0430 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php and looking for <1555918470.254>
+07:34:30:0430 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php and looking for <1555918470.254>
+07:34:30:0430 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php and looking for <1555918470.254>
+07:34:31:0431 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php and looking for <1555918470.254>
+07:34:31:0431 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php and looking for <1555918470.254>
+07:34:31:0431 ,begin_scan, Submitting payload: <1555918470.254> to input field: submit
+07:34:31:0431 ,begin_scan, Checking all URLs found for <1555918470.254>
+07:34:31:0431 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/ and looking for <1555918470.254>
+07:34:31:0431 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php and looking for <1555918470.254>
+07:34:31:0431 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php and looking for <1555918470.254>
+07:34:31:0431 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php and looking for <1555918470.254>
+07:34:31:0431 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php and looking for <1555918470.254>
+07:34:31:0431 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php and looking for <1555918470.254>
+07:34:31:0431 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php and looking for <1555918470.254>
+07:34:31:0431 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php and looking for <1555918470.254>
+07:34:31:0431 ,begin_scan, Submitting payload: <1555918470.254> to input field: 
+07:34:31:0431 ,begin_scan, Checking all URLs found for <1555918470.254>
+07:34:31:0431 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/ and looking for <1555918470.254>
+07:34:31:0431 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php and looking for <1555918470.254>
+07:34:31:0431 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php and looking for <1555918470.254>
+07:34:31:0431 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php and looking for <1555918470.254>
+07:34:31:0431 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php and looking for <1555918470.254>
+07:34:31:0431 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php and looking for <1555918470.254>
+07:34:31:0431 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php and looking for <1555918470.254>
+07:34:31:0431 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php and looking for <1555918470.254>
+07:34:32:0432 ,begin_scan, Beginning testing of form on http://vul.handykartsweb.com/register.php:   post register.php
+07:34:32:0432 ,begin_scan, Beginning testing input fields of form on http://vul.handykartsweb.com/register.php:   post register.php
+07:34:32:0432 ,begin_scan, Submitting payload: <1555918470.254> to input field: regusername
+07:34:32:0432 ,begin_scan, Checking all URLs found for <1555918470.254>
+07:34:32:0432 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/ and looking for <1555918470.254>
+07:34:32:0432 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php and looking for <1555918470.254>
+07:34:32:0432 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php and looking for <1555918470.254>
+07:34:32:0432 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php and looking for <1555918470.254>
+07:34:32:0432 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php and looking for <1555918470.254>
+07:34:32:0432 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php and looking for <1555918470.254>
+07:34:32:0432 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php and looking for <1555918470.254>
+07:34:32:0432 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php and looking for <1555918470.254>
+07:34:32:0432 ,begin_scan, Submitting payload: <1555918470.254> to input field: regpassword
+07:34:32:0432 ,begin_scan, Checking all URLs found for <1555918470.254>
+07:34:32:0432 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/ and looking for <1555918470.254>
+07:34:32:0432 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php and looking for <1555918470.254>
+07:34:32:0432 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php and looking for <1555918470.254>
+07:34:32:0432 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php and looking for <1555918470.254>
+07:34:32:0432 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php and looking for <1555918470.254>
+07:34:32:0432 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php and looking for <1555918470.254>
+07:34:32:0432 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php and looking for <1555918470.254>
+07:34:33:0433 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php and looking for <1555918470.254>
+07:34:33:0433 ,begin_scan, Submitting payload: <1555918470.254> to input field: regpassword2
+07:34:33:0433 ,begin_scan, Checking all URLs found for <1555918470.254>
+07:34:33:0433 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/ and looking for <1555918470.254>
+07:34:33:0433 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php and looking for <1555918470.254>
+07:34:33:0433 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php and looking for <1555918470.254>
+07:34:33:0433 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php and looking for <1555918470.254>
+07:34:33:0433 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php and looking for <1555918470.254>
+07:34:33:0433 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php and looking for <1555918470.254>
+07:34:33:0433 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php and looking for <1555918470.254>
+07:34:33:0433 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php and looking for <1555918470.254>
+07:34:33:0433 ,begin_scan, Submitting payload: <1555918470.254> to input field: email
+07:34:33:0433 ,begin_scan, Checking all URLs found for <1555918470.254>
+07:34:33:0433 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/ and looking for <1555918470.254>
+07:34:33:0433 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php and looking for <1555918470.254>
+07:34:33:0433 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php and looking for <1555918470.254>
+07:34:33:0433 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php and looking for <1555918470.254>
+07:34:33:0433 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php and looking for <1555918470.254>
+07:34:33:0433 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php and looking for <1555918470.254>
+07:34:33:0433 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php and looking for <1555918470.254>
+07:34:33:0433 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php and looking for <1555918470.254>
+07:34:34:0434 ,begin_scan, Submitting payload: <1555918470.254> to input field: submit
+07:34:34:0434 ,begin_scan, Checking all URLs found for <1555918470.254>
+07:34:34:0434 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/ and looking for <1555918470.254>
+07:34:34:0434 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/index.php and looking for <1555918470.254>
+07:34:34:0434 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/login.php and looking for <1555918470.254>
+07:34:34:0434 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/about.php and looking for <1555918470.254>
+07:34:34:0434 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/crawler.php and looking for <1555918470.254>
+07:34:34:0434 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/scanner.php and looking for <1555918470.254>
+07:34:34:0434 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/history.php and looking for <1555918470.254>
+07:34:34:0434 ,begin_scan, Sending HTTP request to http://vul.handykartsweb.com/register.php and looking for <1555918470.254>
+07:34:34:0434 ,begin_scan, Submitting payload: <1555918470.254> to input field: reset
+07:34:34:0434 ,begin_scan, Finished Stored XSS testing of all URLS for test: 19
+07:34:34:0434 ,begin_scan, Beginning creating PDF report for test: 19
+07:34:34:0434 ,begin_scan, Starting PDF generator function for test: 19
+07:34:34:0434 ,begin_scan, Displaying summary in PDF
+07:34:34:0434 ,begin_scan, Successfully executed query SELECT * FROM tests WHERE id = 19
+07:34:34:0434 ,begin_scan, Identifying what vulnerabilities were found during test
+07:34:34:0434 ,begin_scan, Successfully executed query SELECT * FROM test_results WHERE test_id = 19
+07:34:34:0434 ,begin_scan, Displaying details in PDF of each vulnerability found
+07:34:34:0434 ,begin_scan, Finished creating PDF report for test: 19
+07:34:34:0434 ,begin_scan, Beginning emailing PDF report to $email for test: 19
+07:34:34:0434 ,begin_scan, Starting email PDF function for test: 19
+07:34:34:0434 ,begin_scan, File: reports/Test_19.pdf exists
+07:34:35:0435 ,begin_scan, reports/Test_19.pdf successfully sent to 281996gs@gmail.com
+07:34:35:0435 ,begin_scan, Finished emailing PDF report to $email for test: 19

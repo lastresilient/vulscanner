@@ -1,0 +1,28 @@
+10:43:41:0441 ,scanner, Connecting to database
+10:43:41:0441 ,scanner, Generating next test ID
+10:43:41:0441 ,scanner, Next ID generated is 1
+10:43:41:0441 ,scanner, Successfully executed query: INSERT into tests(id,status,numUrlsFound,type,num_requests_sent,start_timestamp,finish_timestamp,scan_finished,url,username,urls_found) VALUES(1,'Creating profile for new scan...',0,'scan',0,1555325021,1555325021,0,'http://spurmotorsports.com/','aashish1','') 
+10:43:41:0441 ,scanner, Calling AJAX function beginCrawl()
+10:44:19:0419 ,scanner, Connecting to database
+10:44:19:0419 ,scanner, Generating next test ID
+10:44:19:0419 ,scanner, Next ID generated is 2
+10:44:19:0419 ,scanner, Successfully executed query: INSERT into tests(id,status,numUrlsFound,type,num_requests_sent,start_timestamp,finish_timestamp,scan_finished,url,username,urls_found) VALUES(2,'Creating profile for new scan...',0,'scan',0,1555325059,1555325059,0,'http://spurmotorsports.com/','aashish1','') 
+10:44:19:0419 ,scanner, Calling AJAX function beginCrawl()
+10:44:27:0427 ,scanner, Connecting to database
+10:44:27:0427 ,scanner, Generating next test ID
+10:44:27:0427 ,scanner, Next ID generated is 3
+10:44:27:0427 ,scanner, Problem executing query: INSERT into tests(id,status,numUrlsFound,type,num_requests_sent,start_timestamp,finish_timestamp,scan_finished,url,username,urls_found) VALUES(3,'Creating profile for new scan...',0,'scan',0,1555325067,1555325067,0,'spurmotorsports.com/','aashish1','') 
+10:44:32:0432 ,scanner, Connecting to database
+10:44:32:0432 ,scanner, Generating next test ID
+10:44:32:0432 ,scanner, Next ID generated is 3
+10:44:32:0432 ,scanner, Successfully executed query: INSERT into tests(id,status,numUrlsFound,type,num_requests_sent,start_timestamp,finish_timestamp,scan_finished,url,username,urls_found) VALUES(3,'Creating profile for new scan...',0,'scan',0,1555325072,1555325072,0,'spurmotorsports.com/','aashish1','') 
+10:44:32:0432 ,scanner, Calling AJAX function beginCrawl()
+10:46:44:0444 ,scanner, Connecting to database
+10:46:44:0444 ,scanner, Generating next test ID
+10:46:44:0444 ,scanner, Next ID generated is 4
+10:46:44:0444 ,scanner, Successfully executed query: INSERT into tests(id,status,numUrlsFound,type,num_requests_sent,start_timestamp,finish_timestamp,scan_finished,url,username,urls_found) VALUES(4,'Creating profile for new scan...',0,'scan',0,1555325204,1555325204,0,'http://spurmotorsports.com/','aashish1','') 
+10:46:44:0444 ,scanner, Calling AJAX function beginCrawl()
+10:46:57:0457 ,scanner, Connecting to database
+10:46:57:0457 ,scanner, Generating next test ID
+10:46:57:0457 ,scanner, Next ID generated is 5
+10:46:57:0457 ,scanner, Problem executing query: INSERT into tests(id,status,numUrlsFound,type,num_requests_sent,start_timestamp,finish_timestamp,scan_finished,url,username,urls_found) VALUES(5,'Creating profile for new scan...',0,'scan',0,1555325217,1555325217,0,'spurmotorsports.com/','aashish1','') 
